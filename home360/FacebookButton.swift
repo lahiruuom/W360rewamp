@@ -15,10 +15,10 @@ struct FacebookButton: View {
             }) {
                 Image(Images.LoginView.facebook.rawValue)
                 Text("Continue with Facebook")
-                    .font(Font.custom(Fonts.Bold.rawValue, size: 17))
+                    .modifier(TextTemplate(textColor: .white, textSize: 17, fontName: .Medium))
             }
             .modifier(ButtonTemplate(background: Color.appColor(.facebook)))
-            .frame(height: 44, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .frame(height: 56, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         }
     }
 }

@@ -8,19 +8,16 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @ObservedObject var viewModel: LoginViewModel
+    
     var body: some View {
-        ZStack {
-            ScrollView(.vertical) {
-                VStack {
-                    
-                }
+        ScrollView(.vertical, showsIndicators: false) {
+            VStack(alignment: .leading) {
+                ManualLoginView(username: $viewModel.username, password: $viewModel.password)
+                SocialLoginView()
             }
         }
-    }
-}
-
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
+        .background(Color.appColor(.lightGray))
     }
 }

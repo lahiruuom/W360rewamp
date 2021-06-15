@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A22F07E26788E11002701ED /* SignInWithApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A22F07D26788E11002701ED /* SignInWithApple.swift */; };
 		2A5A21A3267737F8002EF3F6 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21A2267737F8002EF3F6 /* StartView.swift */; };
 		2A5A21A7267738C6002EF3F6 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21A6267738C6002EF3F6 /* StartViewModel.swift */; };
 		2A5A21AB26774DDC002EF3F6 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21AA26774DDC002EF3F6 /* Images.swift */; };
@@ -34,6 +35,7 @@
 		2A5A21DC26777A81002EF3F6 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21DB26777A81002EF3F6 /* Fonts.swift */; };
 		2A5A21DE26778047002EF3F6 /* TextTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21DD26778047002EF3F6 /* TextTemplate.swift */; };
 		2A5A21E026778881002EF3F6 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21DF26778881002EF3F6 /* Color+Extensions.swift */; };
+		2A74567B2678A6400084E100 /* TextFieldCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A74567A2678A6400084E100 /* TextFieldCustom.swift */; };
 		2A8DEF992675CACF00A0F334 /* home360App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEF982675CACF00A0F334 /* home360App.swift */; };
 		2A8DEF9B2675CACF00A0F334 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEF9A2675CACF00A0F334 /* ContentView.swift */; };
 		2A8DEF9D2675CAD000A0F334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A8DEF9C2675CAD000A0F334 /* Assets.xcassets */; };
@@ -70,6 +72,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A22F07D26788E11002701ED /* SignInWithApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithApple.swift; sourceTree = "<group>"; };
+		2A22F07F26788E85002701ED /* home360Release.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = home360Release.entitlements; sourceTree = "<group>"; };
 		2A5A21A2267737F8002EF3F6 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		2A5A21A6267738C6002EF3F6 /* StartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
 		2A5A21AA26774DDC002EF3F6 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 		2A5A21DB26777A81002EF3F6 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		2A5A21DD26778047002EF3F6 /* TextTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTemplate.swift; sourceTree = "<group>"; };
 		2A5A21DF26778881002EF3F6 /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		2A74567A2678A6400084E100 /* TextFieldCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCustom.swift; sourceTree = "<group>"; };
 		2A8DEF952675CACF00A0F334 /* home360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = home360.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8DEF982675CACF00A0F334 /* home360App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home360App.swift; sourceTree = "<group>"; };
 		2A8DEF9A2675CACF00A0F334 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -192,8 +197,8 @@
 		2A5A21AC26774F72002EF3F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2A5A21B226776A3F002EF3F6 /* Body */,
 				2A5A21AE26775380002EF3F6 /* LoginView.swift */,
+				2A5A21B226776A3F002EF3F6 /* Body */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -210,11 +215,12 @@
 			isa = PBXGroup;
 			children = (
 				2A5A21B326776A72002EF3F6 /* ManualLoginView.swift */,
-				2A5A21BB26776ADC002EF3F6 /* GoogleLoginView.swift */,
 				2A5A21B526776A85002EF3F6 /* SocialLoginView.swift */,
+				2A5A21BB26776ADC002EF3F6 /* GoogleLoginView.swift */,
 				2A5A21B726776AAA002EF3F6 /* LoginButton.swift */,
 				2A5A21B926776AD0002EF3F6 /* FacebookButton.swift */,
 				2A5A21BD26776B2A002EF3F6 /* TextFieldView.swift */,
+				2A22F07D26788E11002701ED /* SignInWithApple.swift */,
 			);
 			name = Body;
 			sourceTree = "<group>";
@@ -243,6 +249,7 @@
 			children = (
 				2A5A21D92677782C002EF3F6 /* ButtonTemplate.swift */,
 				2A5A21DD26778047002EF3F6 /* TextTemplate.swift */,
+				2A74567A2678A6400084E100 /* TextFieldCustom.swift */,
 			);
 			name = UITemplates;
 			sourceTree = "<group>";
@@ -309,6 +316,7 @@
 		2A8DEFC52675CB0F00A0F334 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				2A22F07F26788E85002701ED /* home360Release.entitlements */,
 				2A8DEF982675CACF00A0F334 /* home360App.swift */,
 				2A8DEF9A2675CACF00A0F334 /* ContentView.swift */,
 				2A8DEFA12675CAD000A0F334 /* Info.plist */,
@@ -534,6 +542,7 @@
 				2A5A21B826776AAA002EF3F6 /* LoginButton.swift in Sources */,
 				2A5A21BA26776AD0002EF3F6 /* FacebookButton.swift in Sources */,
 				2A5A21A7267738C6002EF3F6 /* StartViewModel.swift in Sources */,
+				2A74567B2678A6400084E100 /* TextFieldCustom.swift in Sources */,
 				2A5A21E026778881002EF3F6 /* Color+Extensions.swift in Sources */,
 				2A8DEFE42675DDB500A0F334 /* ServiceError.swift in Sources */,
 				2A8DEFD02675CD5900A0F334 /* Constants.swift in Sources */,
@@ -547,6 +556,7 @@
 				2A8DEFCE2675CC8900A0F334 /* Persistance.swift in Sources */,
 				2A8DEF992675CACF00A0F334 /* home360App.swift in Sources */,
 				2A8DEFDB2675DA2D00A0F334 /* ActivityIndicator.swift in Sources */,
+				2A22F07E26788E11002701ED /* SignInWithApple.swift in Sources */,
 				2A5A21BE26776B2A002EF3F6 /* TextFieldView.swift in Sources */,
 				2A5A21DC26777A81002EF3F6 /* Fonts.swift in Sources */,
 				2A5A21AB26774DDC002EF3F6 /* Images.swift in Sources */,
@@ -735,6 +745,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = home360/home360Release.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"home360/Preview Content\"";
 				DEVELOPMENT_TEAM = WS4BP53MAH;

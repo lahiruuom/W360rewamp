@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct TextFieldView: View {
+    
+    @State var placeholder: String
+    @Binding var text: String
+    
     var body: some View {
-        Text("Hello, World!")
-    }
-}
-
-struct TextFieldView_Previews: PreviewProvider {
-    static var previews: some View {
-        TextFieldView()
+        TextFieldCustom(placeholder: Text(placeholder), text: $text)
+            .autocapitalization(.none)
     }
 }

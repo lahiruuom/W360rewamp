@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import SwiftUI
+
+class LoginViewModel: ObservableObject {
+    @Published var username = ""
+    @Published var password = ""
+}

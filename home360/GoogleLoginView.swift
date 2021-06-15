@@ -15,13 +15,12 @@ struct GoogleLoginView: View {
             }) {
                 Image(Images.LoginView.google.rawValue)
                     .resizable()
-                    .frame(width: 37, height: 37, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 25, height: 25, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 Text("Continue with Google")
-                    .font(Font.custom(Fonts.Bold.rawValue, size: 17))
-                    .foregroundColor(.black)
+                    .modifier(TextTemplate(textColor: .black, textSize: 17, fontName: .Medium))
             }
             .modifier(ButtonTemplate(background: .white))
-            .frame(height: 44, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .frame(width: .infinity, height: 56, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         }
     }
 }

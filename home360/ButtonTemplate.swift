@@ -13,13 +13,15 @@ struct ButtonTemplate: ViewModifier {
     @State var textColor: Color = .white
     @State var textSize: CGFloat = 16
     @State var fontName: Fonts = .Regular
-    @State var cornerRadius: CGFloat = 7
+    @State var cornerRadius: CGFloat = 5
     
     func body(content: Content) -> some View {
         return content
             .padding()
             .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: .infinity)
-            .background(RoundedRectangle(cornerRadius: cornerRadius).fill(background))
+            .background(RoundedRectangle(cornerRadius: cornerRadius)
+                            .fill(background)
+                            .shadow(color: .gray, radius: 2, x: 0, y: 2))
             .foregroundColor(.white)
             .font(Font.custom(fontName.rawValue, size: textSize))
     }
