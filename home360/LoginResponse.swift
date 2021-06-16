@@ -9,13 +9,6 @@ import Foundation
 
 // MARK: - LoginResponse
 struct LoginResponse: Decodable {
-    let message: String
-    let error: Bool
-    let payload: Login
-}
-
-// MARK: - Payload
-struct Login: Decodable {
     let user: User?
     let accessToken, refreshToken: String?
 

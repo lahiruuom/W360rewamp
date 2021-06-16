@@ -48,6 +48,7 @@
 		2A5A21DC26777A81002EF3F6 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21DB26777A81002EF3F6 /* Fonts.swift */; };
 		2A5A21DE26778047002EF3F6 /* TextTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21DD26778047002EF3F6 /* TextTemplate.swift */; };
 		2A5A21E026778881002EF3F6 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21DF26778881002EF3F6 /* Color+Extensions.swift */; };
+		2A687B51267A4EB000B563A2 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A687B50267A4EB000B563A2 /* APIResponse.swift */; };
 		2A74567B2678A6400084E100 /* TextFieldCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A74567A2678A6400084E100 /* TextFieldCustom.swift */; };
 		2A8DEF992675CACF00A0F334 /* home360App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEF982675CACF00A0F334 /* home360App.swift */; };
 		2A8DEF9B2675CACF00A0F334 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEF9A2675CACF00A0F334 /* ContentView.swift */; };
@@ -125,6 +126,7 @@
 		2A5A21DB26777A81002EF3F6 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		2A5A21DD26778047002EF3F6 /* TextTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTemplate.swift; sourceTree = "<group>"; };
 		2A5A21DF26778881002EF3F6 /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		2A687B50267A4EB000B563A2 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		2A74567A2678A6400084E100 /* TextFieldCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCustom.swift; sourceTree = "<group>"; };
 		2A8DEF952675CACF00A0F334 /* home360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = home360.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8DEF982675CACF00A0F334 /* home360App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home360App.swift; sourceTree = "<group>"; };
@@ -358,6 +360,14 @@
 			name = UITemplates;
 			sourceTree = "<group>";
 		};
+		2A687B4F267A4E7500B563A2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2A687B50267A4EB000B563A2 /* APIResponse.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
 		2A8DEF8C2675CACF00A0F334 = {
 			isa = PBXGroup;
 			children = (
@@ -443,6 +453,7 @@
 		2A8DEFC72675CB7800A0F334 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2A687B4F267A4E7500B563A2 /* Entities */,
 				2A5A21BF26776B7F002EF3F6 /* Fonts */,
 				2A8DEFC82675CB8B00A0F334 /* SF.swift */,
 				2A8DEFCD2675CC8900A0F334 /* Persistance.swift */,
@@ -666,6 +677,7 @@
 				2A5A21A3267737F8002EF3F6 /* StartView.swift in Sources */,
 				2A8DEF9B2675CACF00A0F334 /* ContentView.swift in Sources */,
 				2A8DEFCE2675CC8900A0F334 /* Persistance.swift in Sources */,
+				2A687B51267A4EB000B563A2 /* APIResponse.swift in Sources */,
 				2A8DEF992675CACF00A0F334 /* home360App.swift in Sources */,
 				2A40817D2679E3420037B65F /* Credential.swift in Sources */,
 				2A8DEFDB2675DA2D00A0F334 /* ActivityIndicator.swift in Sources */,

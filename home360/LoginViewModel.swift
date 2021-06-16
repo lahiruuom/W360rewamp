@@ -26,14 +26,18 @@ class LoginViewModel: ObservableObject, LoginViewModelProtocol {
     @Published var thirdPartyToken = ""
     @Published var isLoginSuccess: Bool = false
     @Published var isAlertPresented: Bool = false
+    @Published var errorMessage: String = ""
+    internal var loadingState: LoadingStateProtocol
     
     init(manager: LoginRemoteDataManagerProtocol = LoginRemoteDataManager(),
-         persistance: PersistanceProtocol = Persistance() ) {
+         persistance: PersistanceProtocol = Persistance() , loading: LoadingStateProtocol = LoadingState()) {
         self.manager = manager
         self.persistance = persistance
+        self.loadingState = loading
     }
     
     func login() {
+        loadingState.isLoading = true
         let credential = Credential(loginType: loginType, email: username, password: password, thirdPartyToken: thirdPartyToken)
         let responsePublisher = manager?.login(credential)
             .print()
@@ -43,10 +47,16 @@ class LoginViewModel: ObservableObject, LoginViewModelProtocol {
                     debugPrint(error)
                     self?.isAlertPresented = true
                 case .finished:
-                    print("Login success")
+                    self?.isLoginSuccess = true
                 }
+                self?.loadingState.isLoading = false
             }, receiveValue: { requestToken in
-                
+                if requestToken.error {
+                    self.errorMessage = requestToken.message
+                    self.isAlertPresented = true
+                    return
+                }
+                self.loadingState.isLoading = false
             })
         cancellables += [responsePublisher]
     }

@@ -11,17 +11,22 @@ struct LoginView: View {
     @ObservedObject var viewModel: LoginViewModel
     
     var body: some View {
-        ScrollView(.vertical, showsIndicators: false) {
-            VStack(alignment: .leading) {
-                ManualLoginView(viewModel: viewModel)
-                SocialLoginView(titleLabel: "Or, login with")
-                    .padding(EdgeInsets(top: -10, leading: 0, bottom: 0, trailing: 0))
+        ActivityIndicatorView(loadingState: viewModel.loadingState as! LoadingState) {
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(alignment: .leading) {
+                    ManualLoginView(viewModel: viewModel)
+                    SocialLoginView(titleLabel: "Or, login with")
+                        .padding(EdgeInsets(top: -10, leading: 0, bottom: 0, trailing: 0))
+                }
             }
-        }
-        .background(Color.white)
-        .ignoresSafeArea()
-        .onTapGesture {
-            self.endEditing()
+            .background(Color.white)
+            .ignoresSafeArea()
+            .onTapGesture {
+                self.endEditing()
+            }
+            .alert(isPresented: self.$viewModel.isAlertPresented) {
+                Alert(title: Text("SORRY!"), message: Text(self.viewModel.errorMessage), dismissButton: .default(Text("OK")))
+            }
         }
     }
 }
