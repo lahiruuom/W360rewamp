@@ -9,9 +9,7 @@ import SwiftUI
 import Foundation
 
 struct ManualLoginView: View {
-    
-    @Binding var username: String
-    @Binding var password: String
+    @ObservedObject var viewModel: LoginViewModel
     
     var body: some View {
         ZStack(alignment: .leading) {
@@ -40,11 +38,11 @@ struct ManualLoginView: View {
                     }
                 }
                 .padding(EdgeInsets(top: 0, leading: 16, bottom: 20, trailing: 16))
-                TextFieldView(placeholder: "Email ID", text: $username)
+                TextFieldView(placeholder: "Email ID", text: $viewModel.username)
                     .padding(EdgeInsets(top: 0, leading: 31, bottom: 16, trailing: 31))
-                TextFieldView(placeholder: "Password", text: $password)
+                TextFieldView(placeholder: "Password", text: $viewModel.password)
                     .padding(EdgeInsets(top: 0, leading: 31, bottom: 16, trailing: 31))
-                LoginButton()
+                LoginButton(viewModel: viewModel)
                     .padding(EdgeInsets(top: 0, leading: 31, bottom: 16, trailing: 31))
             }
         }

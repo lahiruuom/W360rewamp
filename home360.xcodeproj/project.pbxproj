@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		2A22F07E26788E11002701ED /* SignInWithApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A22F07D26788E11002701ED /* SignInWithApple.swift */; };
+		2A4081702679C1590037B65F /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A40816F2679C1590037B65F /* UIApplication+Extension.swift */; };
+		2A4081722679C1F40037B65F /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4081712679C1F40037B65F /* View+Extension.swift */; };
+		2A4081742679D20D0037B65F /* AuthEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4081732679D20D0037B65F /* AuthEndpoint.swift */; };
+		2A4081762679D3D80037B65F /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4081752679D3D80037B65F /* Config.swift */; };
+		2A40817B2679E2D90037B65F /* LoginRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A40817A2679E2D90037B65F /* LoginRemoteDataManager.swift */; };
+		2A40817D2679E3420037B65F /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A40817C2679E3420037B65F /* Credential.swift */; };
+		2A40817F2679E4030037B65F /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A40817E2679E4030037B65F /* LoginResponse.swift */; };
+		2A4081812679E4680037B65F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4081802679E4680037B65F /* User.swift */; };
+		2A4081832679E4870037B65F /* MediaReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4081822679E4870037B65F /* MediaReference.swift */; };
+		2A40818A267A185F0037B65F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A408189267A185F0037B65F /* RegisterView.swift */; };
+		2A40818D267A19E80037B65F /* RegisterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A40818C267A19E80037B65F /* RegisterButton.swift */; };
+		2A40818F267A1A010037B65F /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A40818E267A1A010037B65F /* RegisterViewModel.swift */; };
+		2A408192267A2A870037B65F /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2A408191267A2A870037B65F /* KeychainSwift */; };
 		2A5A21A3267737F8002EF3F6 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21A2267737F8002EF3F6 /* StartView.swift */; };
 		2A5A21A7267738C6002EF3F6 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21A6267738C6002EF3F6 /* StartViewModel.swift */; };
 		2A5A21AB26774DDC002EF3F6 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21AA26774DDC002EF3F6 /* Images.swift */; };
@@ -43,7 +56,6 @@
 		2A8DEFAB2675CAD000A0F334 /* home360Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFAA2675CAD000A0F334 /* home360Tests.swift */; };
 		2A8DEFB62675CAD000A0F334 /* home360UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFB52675CAD000A0F334 /* home360UITests.swift */; };
 		2A8DEFC92675CB8B00A0F334 /* SF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFC82675CB8B00A0F334 /* SF.swift */; };
-		2A8DEFCC2675CC6100A0F334 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2A8DEFCB2675CC6100A0F334 /* KeychainSwift */; };
 		2A8DEFCE2675CC8900A0F334 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFCD2675CC8900A0F334 /* Persistance.swift */; };
 		2A8DEFD02675CD5900A0F334 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFCF2675CD5900A0F334 /* Constants.swift */; };
 		2A8DEFD32675CDCC00A0F334 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFD22675CDCC00A0F334 /* Cache.swift */; };
@@ -74,6 +86,18 @@
 /* Begin PBXFileReference section */
 		2A22F07D26788E11002701ED /* SignInWithApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithApple.swift; sourceTree = "<group>"; };
 		2A22F07F26788E85002701ED /* home360Release.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = home360Release.entitlements; sourceTree = "<group>"; };
+		2A40816F2679C1590037B65F /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		2A4081712679C1F40037B65F /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		2A4081732679D20D0037B65F /* AuthEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEndpoint.swift; sourceTree = "<group>"; };
+		2A4081752679D3D80037B65F /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		2A40817A2679E2D90037B65F /* LoginRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRemoteDataManager.swift; sourceTree = "<group>"; };
+		2A40817C2679E3420037B65F /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		2A40817E2679E4030037B65F /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		2A4081802679E4680037B65F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2A4081822679E4870037B65F /* MediaReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaReference.swift; sourceTree = "<group>"; };
+		2A408189267A185F0037B65F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		2A40818C267A19E80037B65F /* RegisterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButton.swift; sourceTree = "<group>"; };
+		2A40818E267A1A010037B65F /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		2A5A21A2267737F8002EF3F6 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		2A5A21A6267738C6002EF3F6 /* StartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
 		2A5A21AA26774DDC002EF3F6 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
@@ -130,7 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A8DEFCC2675CC6100A0F334 /* KeychainSwift in Frameworks */,
+				2A408192267A2A870037B65F /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,9 +175,87 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A4081772679E2AA0037B65F /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				2A4081792679E2C60037B65F /* Remote */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		2A4081782679E2AF0037B65F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2A40817C2679E3420037B65F /* Credential.swift */,
+				2A40817E2679E4030037B65F /* LoginResponse.swift */,
+				2A4081802679E4680037B65F /* User.swift */,
+				2A4081822679E4870037B65F /* MediaReference.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		2A4081792679E2C60037B65F /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				2A40817A2679E2D90037B65F /* LoginRemoteDataManager.swift */,
+			);
+			name = Remote;
+			sourceTree = "<group>";
+		};
+		2A408184267A180A0037B65F /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				2A408188267A18380037B65F /* Entities */,
+				2A408187267A182A0037B65F /* DataManager */,
+				2A408186267A18190037B65F /* ViewModel */,
+				2A408185267A18130037B65F /* View */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		2A408185267A18130037B65F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A408189267A185F0037B65F /* RegisterView.swift */,
+				2A40818B267A18670037B65F /* Body */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2A408186267A18190037B65F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2A40818E267A1A010037B65F /* RegisterViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		2A408187267A182A0037B65F /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		2A408188267A18380037B65F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		2A40818B267A18670037B65F /* Body */ = {
+			isa = PBXGroup;
+			children = (
+				2A40818C267A19E80037B65F /* RegisterButton.swift */,
+			);
+			name = Body;
+			sourceTree = "<group>";
+		};
 		2A5A219F2677377D002EF3F6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				2A408184267A180A0037B65F /* Register */,
 				2A5A21A926774D99002EF3F6 /* Login */,
 				2A5A21A126773790002EF3F6 /* Start */,
 			);
@@ -188,6 +290,8 @@
 		2A5A21A926774D99002EF3F6 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				2A4081782679E2AF0037B65F /* Entities */,
+				2A4081772679E2AA0037B65F /* DataManager */,
 				2A5A21AD26774F86002EF3F6 /* ViewModel */,
 				2A5A21AC26774F72002EF3F6 /* View */,
 			);
@@ -330,6 +434,8 @@
 			isa = PBXGroup;
 			children = (
 				2A5A21DF26778881002EF3F6 /* Color+Extensions.swift */,
+				2A40816F2679C1590037B65F /* UIApplication+Extension.swift */,
+				2A4081712679C1F40037B65F /* View+Extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -377,6 +483,7 @@
 		2A8DEFDD2675DD2400A0F334 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
+				2A4081732679D20D0037B65F /* AuthEndpoint.swift */,
 			);
 			name = Endpoints;
 			sourceTree = "<group>";
@@ -388,6 +495,7 @@
 				2A8DEFE12675DD8A00A0F334 /* RequestService.swift */,
 				2A8DEFE32675DDB500A0F334 /* ServiceError.swift */,
 				2A8DEFE52675DDE600A0F334 /* Enviroment.swift */,
+				2A4081752679D3D80037B65F /* Config.swift */,
 			);
 			name = NetworkCore;
 			sourceTree = "<group>";
@@ -409,7 +517,7 @@
 			);
 			name = home360;
 			packageProductDependencies = (
-				2A8DEFCB2675CC6100A0F334 /* KeychainSwift */,
+				2A408191267A2A870037B65F /* KeychainSwift */,
 			);
 			productName = home360;
 			productReference = 2A8DEF952675CACF00A0F334 /* home360.app */;
@@ -483,7 +591,7 @@
 			);
 			mainGroup = 2A8DEF8C2675CACF00A0F334;
 			packageReferences = (
-				2A8DEFCA2675CC6100A0F334 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				2A408190267A2A870037B65F /* XCRemoteSwiftPackageReference "keychain-swift" */,
 			);
 			productRefGroup = 2A8DEF962675CACF00A0F334 /* Products */;
 			projectDirPath = "";
@@ -539,34 +647,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A4081742679D20D0037B65F /* AuthEndpoint.swift in Sources */,
 				2A5A21B826776AAA002EF3F6 /* LoginButton.swift in Sources */,
 				2A5A21BA26776AD0002EF3F6 /* FacebookButton.swift in Sources */,
 				2A5A21A7267738C6002EF3F6 /* StartViewModel.swift in Sources */,
 				2A74567B2678A6400084E100 /* TextFieldCustom.swift in Sources */,
 				2A5A21E026778881002EF3F6 /* Color+Extensions.swift in Sources */,
+				2A40818D267A19E80037B65F /* RegisterButton.swift in Sources */,
 				2A8DEFE42675DDB500A0F334 /* ServiceError.swift in Sources */,
 				2A8DEFD02675CD5900A0F334 /* Constants.swift in Sources */,
 				2A5A21B426776A72002EF3F6 /* ManualLoginView.swift in Sources */,
 				2A5A21AF26775380002EF3F6 /* LoginView.swift in Sources */,
+				2A40818F267A1A010037B65F /* RegisterViewModel.swift in Sources */,
 				2A5A21B12677538C002EF3F6 /* LoginViewModel.swift in Sources */,
+				2A40817B2679E2D90037B65F /* LoginRemoteDataManager.swift in Sources */,
 				2A8DEFE22675DD8A00A0F334 /* RequestService.swift in Sources */,
 				2A5A21DA2677782C002EF3F6 /* ButtonTemplate.swift in Sources */,
 				2A5A21A3267737F8002EF3F6 /* StartView.swift in Sources */,
 				2A8DEF9B2675CACF00A0F334 /* ContentView.swift in Sources */,
 				2A8DEFCE2675CC8900A0F334 /* Persistance.swift in Sources */,
 				2A8DEF992675CACF00A0F334 /* home360App.swift in Sources */,
+				2A40817D2679E3420037B65F /* Credential.swift in Sources */,
 				2A8DEFDB2675DA2D00A0F334 /* ActivityIndicator.swift in Sources */,
 				2A22F07E26788E11002701ED /* SignInWithApple.swift in Sources */,
 				2A5A21BE26776B2A002EF3F6 /* TextFieldView.swift in Sources */,
 				2A5A21DC26777A81002EF3F6 /* Fonts.swift in Sources */,
 				2A5A21AB26774DDC002EF3F6 /* Images.swift in Sources */,
 				2A8DEFD32675CDCC00A0F334 /* Cache.swift in Sources */,
+				2A4081722679C1F40037B65F /* View+Extension.swift in Sources */,
 				2A8DEFC92675CB8B00A0F334 /* SF.swift in Sources */,
+				2A40818A267A185F0037B65F /* RegisterView.swift in Sources */,
 				2A5A21B626776A85002EF3F6 /* SocialLoginView.swift in Sources */,
 				2A8DEFE02675DD5400A0F334 /* NetworkCore.swift in Sources */,
 				2A8DEFE62675DDE600A0F334 /* Enviroment.swift in Sources */,
 				2A5A21BC26776ADC002EF3F6 /* GoogleLoginView.swift in Sources */,
+				2A4081762679D3D80037B65F /* Config.swift in Sources */,
+				2A4081812679E4680037B65F /* User.swift in Sources */,
+				2A4081832679E4870037B65F /* MediaReference.swift in Sources */,
+				2A4081702679C1590037B65F /* UIApplication+Extension.swift in Sources */,
 				2A5A21DE26778047002EF3F6 /* TextTemplate.swift in Sources */,
+				2A40817F2679E4030037B65F /* LoginResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,10 +853,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.w360.home360;
+				PRODUCT_BUNDLE_IDENTIFIER = asia.w360.home360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -756,10 +876,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.w360.home360;
+				PRODUCT_BUNDLE_IDENTIFIER = asia.w360.home360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -889,7 +1009,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2A8DEFCA2675CC6100A0F334 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+		2A408190267A2A870037B65F /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
 			requirement = {
@@ -900,9 +1020,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2A8DEFCB2675CC6100A0F334 /* KeychainSwift */ = {
+		2A408191267A2A870037B65F /* KeychainSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2A8DEFCA2675CC6100A0F334 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			package = 2A408190267A2A870037B65F /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

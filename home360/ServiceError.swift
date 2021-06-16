@@ -8,6 +8,7 @@
 import Foundation
 
 enum ServiceError: Error {
+    
     case responseError(Error)
     case parseError(Error)
     case badURL

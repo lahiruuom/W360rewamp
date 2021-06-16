@@ -8,14 +8,28 @@
 import SwiftUI
 
 struct StartView: View {
-    
     @ObservedObject var viewModel: StartViewModel
     
+    @State var isActive:Bool = false
+    
     var body: some View {
-        Image(Images.StartView.StartIcon.rawValue)
-            .resizable()
-            .frame(width: 200, height: 200, alignment: .center)
-            .scaledToFit()
+        VStack {
+            if self.isActive {
+                LoginView(viewModel: LoginViewModel())
+            } else {
+                Image(Images.StartView.StartIcon.rawValue)
+                    .resizable()
+                    .frame(width: 200, height: 200, alignment: .center)
+                    .scaledToFit()
+            }
+        }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                withAnimation {
+                    self.isActive = true
+                }
+            }
+        }
     }
 }
 

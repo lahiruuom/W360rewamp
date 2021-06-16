@@ -1,10 +1,3 @@
-//
-//  TextFieldTemplate.swift
-//  home360
-//
-//  Created by Lahiru Manulanka Munasinghe on 2021-06-15.
-//
-
 import SwiftUI
 
 struct TextFieldCustom: View {

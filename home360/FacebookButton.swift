@@ -18,7 +18,6 @@ struct FacebookButton: View {
                     .modifier(TextTemplate(textColor: .white, textSize: 17, fontName: .Medium))
             }
             .modifier(ButtonTemplate(background: Color.appColor(.facebook)))
-            .frame(height: 56, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         }
     }
 }

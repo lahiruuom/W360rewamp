@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct LoginButton: View {
+    @ObservedObject var viewModel: LoginViewModel
+    
     var body: some View {
         Button("LOGIN") {
-            print("button pressed")
+            viewModel.loginType = "basic"
+            viewModel.login()
         }
-        .modifier(ButtonTemplate(background: Color.appColor(.lightBrown), textSize: 17, fontName: .Bold))
-    }
-}
-
-struct LoginButton_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginButton()
+        .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+        .frame(height: 48, alignment: .center)
+        .buttonStyle(CustomButtonStyle(background: Color.appColor(.lightBrown), textSize: 17, fontName: .Bold))
     }
 }

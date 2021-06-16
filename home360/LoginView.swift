@@ -8,16 +8,20 @@
 import SwiftUI
 
 struct LoginView: View {
-    
     @ObservedObject var viewModel: LoginViewModel
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .leading) {
-                ManualLoginView(username: $viewModel.username, password: $viewModel.password)
-                SocialLoginView()
+                ManualLoginView(viewModel: viewModel)
+                SocialLoginView(titleLabel: "Or, login with")
+                    .padding(EdgeInsets(top: -10, leading: 0, bottom: 0, trailing: 0))
             }
         }
-        .background(Color.appColor(.lightGray))
+        .background(Color.white)
+        .ignoresSafeArea()
+        .onTapGesture {
+            self.endEditing()
+        }
     }
 }

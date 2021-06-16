@@ -1,10 +1,3 @@
-//
-//  NetworkCore.swift
-//  home360
-//
-//  Created by Lahiru Manulanka Munasinghe on 2021-06-13.
-//
-
 import Foundation
 
 enum HTTPMethod: String {
@@ -26,20 +19,14 @@ protocol RequestProtocol {
 
 public struct ServiceEnviroment {
     
-    var port: String
-    var protocols: String
-    var hosts: String
-    var path: String
+    var baseURL: String
     
-    init(port: String = "", protocols: String = "", hosts: String = "", path: String = "") {
-        self.port = port
-        self.protocols = protocols
-        self.hosts = hosts
-        self.path = path
+    init(baseURL: String = "") {
+        self.baseURL = baseURL
     }
     
     func pathURL(endpont: String) -> String {
-        return "\(protocols)\(port)\(hosts)\(path)\(endpont)"
+        return "\(baseURL)\(endpont)"
     }
 }
 

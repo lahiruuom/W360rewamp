@@ -6,9 +6,49 @@
 //
 
 import Foundation
-import SwiftUI
+import Combine
 
-class LoginViewModel: ObservableObject {
-    @Published var username = ""
-    @Published var password = ""
+protocol LoginViewModelProtocol: Any {
+    var manager: LoginRemoteDataManagerProtocol? { get set }
+    var persistance: PersistanceProtocol? { get set }
+}
+
+class LoginViewModel: ObservableObject, LoginViewModelProtocol {
+    private var cancellables: [AnyCancellable?] = []
+    
+    var manager: LoginRemoteDataManagerProtocol?
+    
+    var persistance: PersistanceProtocol?
+    
+    @Published var username = "lahiru@w360.asia"
+    @Published var password = "webtics123"
+    @Published var loginType = ""
+    @Published var thirdPartyToken = ""
+    @Published var isLoginSuccess: Bool = false
+    @Published var isAlertPresented: Bool = false
+    
+    init(manager: LoginRemoteDataManagerProtocol = LoginRemoteDataManager(),
+         persistance: PersistanceProtocol = Persistance() ) {
+        self.manager = manager
+        self.persistance = persistance
+    }
+    
+    func login() {
+        let credential = Credential(loginType: loginType, email: username, password: password, thirdPartyToken: thirdPartyToken)
+        let responsePublisher = manager?.login(credential)
+            .print()
+            .sink(receiveCompletion: { [weak self] completion in
+                switch completion {
+                case .failure(let error):
+                    debugPrint(error)
+                    self?.isAlertPresented = true
+                case .finished:
+                    print("Login success")
+                }
+            }, receiveValue: { requestToken in
+                
+            })
+        cancellables += [responsePublisher]
+    }
+    
 }

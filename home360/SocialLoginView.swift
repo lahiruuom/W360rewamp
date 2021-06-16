@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct SocialLoginView: View {
+    
+    var titleLabel: String
+    
     var body: some View {
         ZStack {
             Color.white
                 .ignoresSafeArea()
             VStack {
-                Text("Or, login with")
+                Text(titleLabel)
                     .font(Font.custom(Fonts.Medium.rawValue, size: 24))
                     .padding(EdgeInsets(top: 20, leading: 5, bottom: 34, trailing: 5))
                 FacebookButton()
@@ -22,14 +25,8 @@ struct SocialLoginView: View {
                     .padding(EdgeInsets(top: 0, leading: 31, bottom: 29, trailing: 31))
                 SignInWithApple()
                     .frame(height: 56)
-                    .padding(EdgeInsets(top: 0, leading: 31, bottom: 0, trailing: 31))
+                    .padding(EdgeInsets(top: 0, leading: 31, bottom: 31, trailing: 31))
             }
         }
-    }
-}
-
-struct SocialLoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        SocialLoginView()
     }
 }
