@@ -28,5 +28,10 @@ struct LoginView: View {
                 Alert(title: Text("SORRY!"), message: Text(self.viewModel.errorMessage), dismissButton: .default(Text("OK")))
             }
         }
+        if viewModel.isLoginSuccess {
+            NavigationView {
+                RegisterView(viewModel: RegisterViewModel())
+            }
+        }
     }
 }

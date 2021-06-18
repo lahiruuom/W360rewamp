@@ -14,6 +14,13 @@ struct RegisterButton: View {
             
         }
         .buttonStyle(CustomButtonStyle(background: Color.appColor(.lightBrown), textSize: 17, fontName: .Bold))
+        .frame(height: 48, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
     }
 }
 
+struct RegisterButton_Previews: PreviewProvider {
+    
+    static var previews: some View {
+        RegisterButton()
+    }
+}

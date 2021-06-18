@@ -65,6 +65,7 @@
 		2A8DEFE22675DD8A00A0F334 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFE12675DD8A00A0F334 /* RequestService.swift */; };
 		2A8DEFE42675DDB500A0F334 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFE32675DDB500A0F334 /* ServiceError.swift */; };
 		2A8DEFE62675DDE600A0F334 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFE52675DDE600A0F334 /* Enviroment.swift */; };
+		2ADA1704267CA135005C20B6 /* ManualRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA1703267CA135005C20B6 /* ManualRegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +150,7 @@
 		2A8DEFE12675DD8A00A0F334 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
 		2A8DEFE32675DDB500A0F334 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		2A8DEFE52675DDE600A0F334 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
+		2ADA1703267CA135005C20B6 /* ManualRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualRegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				2A40818C267A19E80037B65F /* RegisterButton.swift */,
+				2ADA1703267CA135005C20B6 /* ManualRegisterView.swift */,
 			);
 			name = Body;
 			sourceTree = "<group>";
@@ -661,6 +664,7 @@
 				2A4081742679D20D0037B65F /* AuthEndpoint.swift in Sources */,
 				2A5A21B826776AAA002EF3F6 /* LoginButton.swift in Sources */,
 				2A5A21BA26776AD0002EF3F6 /* FacebookButton.swift in Sources */,
+				2ADA1704267CA135005C20B6 /* ManualRegisterView.swift in Sources */,
 				2A5A21A7267738C6002EF3F6 /* StartViewModel.swift in Sources */,
 				2A74567B2678A6400084E100 /* TextFieldCustom.swift in Sources */,
 				2A5A21E026778881002EF3F6 /* Color+Extensions.swift in Sources */,

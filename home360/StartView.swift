@@ -36,6 +36,6 @@ struct StartView: View {
 struct StartView_Previews: PreviewProvider {
     
     static var previews: some View {
-        LoginView(viewModel: LoginViewModel())
+        RegisterView(viewModel: RegisterViewModel())
     }
 }
