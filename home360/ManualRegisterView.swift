@@ -40,11 +40,11 @@ struct ManualRegisterView: View {
                     .padding(EdgeInsets(top: 0, leading: 31, bottom: 16, trailing: 31))
                 TextFieldView(placeholder: "Email ID", text: $viewModel.email)
                     .padding(EdgeInsets(top: 0, leading: 31, bottom: 16, trailing: 31))
-                TextFieldView(placeholder: "Password", text: $viewModel.password)
+                TextFieldView(placeholder: "Password", text: $viewModel.password, isSecureField: true)
                     .padding(EdgeInsets(top: 0, leading: 31, bottom: 16, trailing: 31))
-                TextFieldView(placeholder: "Confirm Password", text: $viewModel.password)
+                TextFieldView(placeholder: "Confirm Password", text: $viewModel.confirmPassword, isSecureField: true)
                     .padding(EdgeInsets(top: 0, leading: 31, bottom: 16, trailing: 31))
-                RegisterButton()
+                RegisterButton(viewModel: viewModel)
                     .padding(EdgeInsets(top: 0, leading: 31, bottom: 16, trailing: 31))
             }
         }

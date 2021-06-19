@@ -9,6 +9,7 @@ struct TextFieldCustom: View {
     @Binding var text: String
     var editingChanged: (Bool) -> Void = { _ in }
     var commit: () -> Void = { }
+    var isSecureField: Bool = false
     
     var body: some View {
         ZStack {
@@ -20,8 +21,13 @@ struct TextFieldCustom: View {
                         .foregroundColor(placeholderColor)
                 }
                 VStack(alignment: .leading){
-                    TextField("", text: $text, onEditingChanged: editingChanged, onCommit: commit)
-                        .background(Color.white)
+                    if isSecureField {
+                        SecureField("", text: $text, onCommit: commit)
+                            .background(Color.white)
+                    } else{
+                        TextField("", text: $text, onEditingChanged: editingChanged, onCommit: commit)
+                            .background(Color.white)
+                    }
                 }
                 .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
                 .frame(height: 40)

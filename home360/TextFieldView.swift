@@ -11,9 +11,10 @@ struct TextFieldView: View {
     
     @State var placeholder: String
     @Binding var text: String
+    var isSecureField: Bool = false
     
     var body: some View {
-        TextFieldCustom(placeholder: Text(placeholder), text: $text)
+        TextFieldCustom(placeholder: Text(placeholder), text: $text, isSecureField: isSecureField)
             .autocapitalization(.none)
     }
 }

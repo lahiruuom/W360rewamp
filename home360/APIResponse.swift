@@ -30,7 +30,7 @@ struct HomeNowMVErrors<T: Decodable>: Decodable {
     let errors: [T]
 }
 
-struct HomeError: Decodable {
+struct HomeError: Error, Decodable {
     let error: Bool
     let message: String
 }

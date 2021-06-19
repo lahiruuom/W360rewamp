@@ -66,6 +66,10 @@
 		2A8DEFE42675DDB500A0F334 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFE32675DDB500A0F334 /* ServiceError.swift */; };
 		2A8DEFE62675DDE600A0F334 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFE52675DDE600A0F334 /* Enviroment.swift */; };
 		2ADA1704267CA135005C20B6 /* ManualRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA1703267CA135005C20B6 /* ManualRegisterView.swift */; };
+		2ADA1706267D7B81005C20B6 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA1705267D7B81005C20B6 /* Register.swift */; };
+		2ADA1709267D7CD9005C20B6 /* RegisterRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA1708267D7CD9005C20B6 /* RegisterRemoteDataManager.swift */; };
+		2ADA170B267D7E2F005C20B6 /* RegisterRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA170A267D7E2F005C20B6 /* RegisterRes.swift */; };
+		2ADA1710267D92AF005C20B6 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2ADA170F267D92AF005C20B6 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +155,9 @@
 		2A8DEFE32675DDB500A0F334 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		2A8DEFE52675DDE600A0F334 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
 		2ADA1703267CA135005C20B6 /* ManualRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualRegisterView.swift; sourceTree = "<group>"; };
+		2ADA1705267D7B81005C20B6 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		2ADA1708267D7CD9005C20B6 /* RegisterRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRemoteDataManager.swift; sourceTree = "<group>"; };
+		2ADA170A267D7E2F005C20B6 /* RegisterRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A408192267A2A870037B65F /* KeychainSwift in Frameworks */,
+				2ADA1710267D92AF005C20B6 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +245,7 @@
 		2A408187267A182A0037B65F /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				2ADA1707267D7CA0005C20B6 /* Remote */,
 			);
 			name = DataManager;
 			sourceTree = "<group>";
@@ -244,6 +253,8 @@
 		2A408188267A18380037B65F /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				2ADA1705267D7B81005C20B6 /* Register.swift */,
+				2ADA170A267D7E2F005C20B6 /* RegisterRes.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -514,6 +525,14 @@
 			name = NetworkCore;
 			sourceTree = "<group>";
 		};
+		2ADA1707267D7CA0005C20B6 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				2ADA1708267D7CD9005C20B6 /* RegisterRemoteDataManager.swift */,
+			);
+			name = Remote;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -532,6 +551,7 @@
 			name = home360;
 			packageProductDependencies = (
 				2A408191267A2A870037B65F /* KeychainSwift */,
+				2ADA170F267D92AF005C20B6 /* IQKeyboardManagerSwift */,
 			);
 			productName = home360;
 			productReference = 2A8DEF952675CACF00A0F334 /* home360.app */;
@@ -606,6 +626,7 @@
 			mainGroup = 2A8DEF8C2675CACF00A0F334;
 			packageReferences = (
 				2A408190267A2A870037B65F /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				2ADA170E267D92AE005C20B6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 2A8DEF962675CACF00A0F334 /* Products */;
 			projectDirPath = "";
@@ -663,8 +684,10 @@
 			files = (
 				2A4081742679D20D0037B65F /* AuthEndpoint.swift in Sources */,
 				2A5A21B826776AAA002EF3F6 /* LoginButton.swift in Sources */,
+				2ADA1706267D7B81005C20B6 /* Register.swift in Sources */,
 				2A5A21BA26776AD0002EF3F6 /* FacebookButton.swift in Sources */,
 				2ADA1704267CA135005C20B6 /* ManualRegisterView.swift in Sources */,
+				2ADA170B267D7E2F005C20B6 /* RegisterRes.swift in Sources */,
 				2A5A21A7267738C6002EF3F6 /* StartViewModel.swift in Sources */,
 				2A74567B2678A6400084E100 /* TextFieldCustom.swift in Sources */,
 				2A5A21E026778881002EF3F6 /* Color+Extensions.swift in Sources */,
@@ -684,6 +707,7 @@
 				2A687B51267A4EB000B563A2 /* APIResponse.swift in Sources */,
 				2A8DEF992675CACF00A0F334 /* home360App.swift in Sources */,
 				2A40817D2679E3420037B65F /* Credential.swift in Sources */,
+				2ADA1709267D7CD9005C20B6 /* RegisterRemoteDataManager.swift in Sources */,
 				2A8DEFDB2675DA2D00A0F334 /* ActivityIndicator.swift in Sources */,
 				2A22F07E26788E11002701ED /* SignInWithApple.swift in Sources */,
 				2A5A21BE26776B2A002EF3F6 /* TextFieldView.swift in Sources */,
@@ -1033,6 +1057,14 @@
 				minimumVersion = 19.0.0;
 			};
 		};
+		2ADA170E267D92AE005C20B6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1040,6 +1072,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2A408190267A2A870037B65F /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
+		};
+		2ADA170F267D92AF005C20B6 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2ADA170E267D92AE005C20B6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

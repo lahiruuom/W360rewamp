@@ -15,7 +15,7 @@ struct StartView: View {
     var body: some View {
         VStack {
             if self.isActive {
-                LoginView(viewModel: LoginViewModel())
+                RegisterView(viewModel: RegisterViewModel())
             } else {
                 Image(Images.StartView.StartIcon.rawValue)
                     .resizable()

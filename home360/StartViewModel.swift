@@ -5,6 +5,7 @@
 //  Created by Lahiru Manulanka Munasinghe on 2021-06-14.
 //
 import SwiftUI
+import IQKeyboardManagerSwift
 
 class StartViewModel: ObservableObject {
     
@@ -15,6 +16,7 @@ class StartViewModel: ObservableObject {
     init(isSessionIDExist: Bool) {
         self.isSessionIDExist = isSessionIDExist
         self.isTabBarActive = isSessionIDExist
+        IQKeyboardManager.shared.enable = true
     }
 }
 

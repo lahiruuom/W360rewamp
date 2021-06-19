@@ -50,9 +50,9 @@ class LoginViewModel: ObservableObject, LoginViewModelProtocol {
                     self?.isLoginSuccess = true
                 }
                 self?.loadingState.isLoading = false
-            }, receiveValue: { requestToken in
-                if requestToken.error {
-                    self.errorMessage = requestToken.message
+            }, receiveValue: { response in
+                if response.error {
+                    self.errorMessage = response.message
                     self.isAlertPresented = true
                     return
                 }
