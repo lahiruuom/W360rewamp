@@ -45,14 +45,29 @@ struct RequestService: RequestServiceProtocol {
     
     internal func urlSessionRequest<T: Decodable>(urlRequest: URLRequest) -> AnyPublisher<T, Error> {
         return URLSession.shared.dataTaskPublisher(for: urlRequest)
-        .print()
-        .map { $0.data }
-        .mapError(ServiceError.responseError)
-        .decode(type: T.self, decoder: JSONDecoder())
-        .mapError(ServiceError.parseError)
-        .receive(on: RunLoop.main)
-        .eraseToAnyPublisher()
+            .print()
+            .mapError { $0 as Error }
+            .flatMap() { output -> AnyPublisher<T, Error> in
+                guard let httpResponse = output.response as? HTTPURLResponse else {
+                    return Fail(error: APIError.unknown).eraseToAnyPublisher()
+                }
+                if httpResponse.statusCode == 200 {
+                    return Just(output.data)
+                        .decode(type: T.self, decoder: JSONDecoder())
+                        .eraseToAnyPublisher()
+                } else {
+                    return Just(output.data)
+                        .decode(type: HomeError.self, decoder: JSONDecoder())
+                        .flatMap { Fail(error: $0) }
+                        .eraseToAnyPublisher()
+                }
+            }
+            .eraseToAnyPublisher()
     }
+}
+
+enum APIError: Error {
+    case unknown
 }
 
 

@@ -20,14 +20,14 @@ class RegisterViewModel: ObservableObject, RegisterViewModelProtocol {
     
     var persistance: PersistanceProtocol?
     
-    @Published var givenName = ""
-    @Published var surname = ""
-    @Published var email = ""
+    @Published var givenName = "adsfasfa"
+    @Published var surname = "asfasfasf"
+    @Published var email = "asfaf@gmail.com"
     @Published var loginType = "basic"
     @Published var socialUserId = ""
     @Published var profileImageUrl = ""
-    @Published var password = ""
-    @Published var confirmPassword = ""
+    @Published var password = "ddsads"
+    @Published var confirmPassword = "ddsads"
     @Published var providerToken = ""
     @Published var isRegisterSuccess: Bool = false
     @Published var isAlertPresented: Bool = false
@@ -51,24 +51,23 @@ class RegisterViewModel: ObservableObject, RegisterViewModelProtocol {
     }
     
     func register() {
+        self.loadingState.isLoading = true
         let register = Register(givenName: givenName, surname: surname, email: email, password: password, loginType: loginType, socialUserId: socialUserId, profileImageUrl: profileImageUrl, providerToken: providerToken)
         let responsePublisher = manager?.register(register)
             .print()
+            .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { [weak self] completion in
                 switch completion {
                 case .failure(let error):
-                    debugPrint(error)
-                    self?.isAlertPresented = true
+                    if let errorObject = error as? HomeError {
+                        self?.errorMessage = errorObject.message
+                        self?.isAlertPresented = true
+                    }
                 case .finished:
                     self?.isRegisterSuccess = true
                 }
                 self?.loadingState.isLoading = false
             }, receiveValue: { response in
-                if response.error {
-                    self.errorMessage = response.message
-                    self.isAlertPresented = true
-                    return
-                }
                 self.loadingState.isLoading = false
             })
         cancellables += [responsePublisher]

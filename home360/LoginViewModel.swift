@@ -41,21 +41,20 @@ class LoginViewModel: ObservableObject, LoginViewModelProtocol {
         let credential = Credential(loginType: loginType, email: username, password: password, thirdPartyToken: thirdPartyToken)
         let responsePublisher = manager?.login(credential)
             .print()
+            .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { [weak self] completion in
                 switch completion {
                 case .failure(let error):
-                    debugPrint(error)
-                    self?.isAlertPresented = true
+                    if let errorObject = error as? HomeError {
+                        self?.errorMessage = errorObject.message
+                        self?.isAlertPresented = true
+                    }
                 case .finished:
                     self?.isLoginSuccess = true
                 }
                 self?.loadingState.isLoading = false
             }, receiveValue: { response in
-                if response.error {
-                    self.errorMessage = response.message
-                    self.isAlertPresented = true
-                    return
-                }
+                
                 self.loadingState.isLoading = false
             })
         cancellables += [responsePublisher]

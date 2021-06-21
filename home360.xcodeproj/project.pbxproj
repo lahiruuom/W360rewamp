@@ -63,7 +63,6 @@
 		2A8DEFDB2675DA2D00A0F334 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFDA2675DA2D00A0F334 /* ActivityIndicator.swift */; };
 		2A8DEFE02675DD5400A0F334 /* NetworkCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFDF2675DD5400A0F334 /* NetworkCore.swift */; };
 		2A8DEFE22675DD8A00A0F334 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFE12675DD8A00A0F334 /* RequestService.swift */; };
-		2A8DEFE42675DDB500A0F334 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFE32675DDB500A0F334 /* ServiceError.swift */; };
 		2A8DEFE62675DDE600A0F334 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFE52675DDE600A0F334 /* Enviroment.swift */; };
 		2ADA1704267CA135005C20B6 /* ManualRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA1703267CA135005C20B6 /* ManualRegisterView.swift */; };
 		2ADA1706267D7B81005C20B6 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA1705267D7B81005C20B6 /* Register.swift */; };
@@ -152,7 +151,6 @@
 		2A8DEFDA2675DA2D00A0F334 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		2A8DEFDF2675DD5400A0F334 /* NetworkCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCore.swift; sourceTree = "<group>"; };
 		2A8DEFE12675DD8A00A0F334 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
-		2A8DEFE32675DDB500A0F334 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		2A8DEFE52675DDE600A0F334 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
 		2ADA1703267CA135005C20B6 /* ManualRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualRegisterView.swift; sourceTree = "<group>"; };
 		2ADA1705267D7B81005C20B6 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
@@ -518,7 +516,6 @@
 			children = (
 				2A8DEFDF2675DD5400A0F334 /* NetworkCore.swift */,
 				2A8DEFE12675DD8A00A0F334 /* RequestService.swift */,
-				2A8DEFE32675DDB500A0F334 /* ServiceError.swift */,
 				2A8DEFE52675DDE600A0F334 /* Enviroment.swift */,
 				2A4081752679D3D80037B65F /* Config.swift */,
 			);
@@ -692,7 +689,6 @@
 				2A74567B2678A6400084E100 /* TextFieldCustom.swift in Sources */,
 				2A5A21E026778881002EF3F6 /* Color+Extensions.swift in Sources */,
 				2A40818D267A19E80037B65F /* RegisterButton.swift in Sources */,
-				2A8DEFE42675DDB500A0F334 /* ServiceError.swift in Sources */,
 				2A8DEFD02675CD5900A0F334 /* Constants.swift in Sources */,
 				2A5A21B426776A72002EF3F6 /* ManualLoginView.swift in Sources */,
 				2A5A21AF26775380002EF3F6 /* LoginView.swift in Sources */,
