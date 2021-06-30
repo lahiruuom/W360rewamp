@@ -10,13 +10,14 @@ import SwiftUI
 struct RegisterView: View {
     
     @ObservedObject var viewModel: RegisterViewModel
+    @ObservedObject var loginViewModel: LoginViewModel
     
     var body: some View {
         ActivityIndicatorView(loadingState: viewModel.loadingState as! LoadingState) {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .leading) {
                     ManualRegisterView(viewModel: viewModel)
-                    SocialLoginView(titleLabel: "Or, Sign up with")
+                    SocialLoginView(viewModel: loginViewModel, registerViewModel: viewModel, titleLabel: "Or, Sign up with", isRegister: true)
                         .padding(EdgeInsets(top: -10, leading: 0, bottom: 0, trailing: 0))
                 }
             }

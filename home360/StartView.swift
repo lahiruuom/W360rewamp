@@ -15,7 +15,7 @@ struct StartView: View {
     var body: some View {
         VStack {
             if self.isActive {
-                RegisterView(viewModel: RegisterViewModel())
+                RegisterView(viewModel: RegisterViewModel(), loginViewModel: LoginViewModel())
             } else {
                 Image(Images.StartView.StartIcon.rawValue)
                     .resizable()
@@ -30,12 +30,5 @@ struct StartView: View {
                 }
             }
         }
-    }
-}
-
-struct StartView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        RegisterView(viewModel: RegisterViewModel())
     }
 }

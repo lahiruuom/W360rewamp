@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>427855209223-vm2c4glt40p36at1pv94ad8m0chtffo6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.427855209223-vm2c4glt40p36at1pv94ad8m0chtffo6</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBTVsnBgSimhgEtOfH9yZr1pbAmASX_0mk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>427855209223</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>asia.w360.home360</string>
+	<key>PROJECT_ID</key>
+	<string>home360-backend-api</string>
+	<key>STORAGE_BUCKET</key>
+	<string>home360-backend-api.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:427855209223:ios:5d63700fe8307eea035ba2</string>
+</dict>
+</plist>

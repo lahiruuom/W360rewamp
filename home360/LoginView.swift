@@ -9,13 +9,12 @@ import SwiftUI
 
 struct LoginView: View {
     @ObservedObject var viewModel: LoginViewModel
-    
     var body: some View {
         ActivityIndicatorView(loadingState: viewModel.loadingState as! LoadingState) {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .leading) {
                     ManualLoginView(viewModel: viewModel)
-                    SocialLoginView(titleLabel: "Or, login with")
+                    SocialLoginView(viewModel: viewModel, registerViewModel: RegisterViewModel(), titleLabel: "Or, login with", isRegister: false)
                         .padding(EdgeInsets(top: -10, leading: 0, bottom: 0, trailing: 0))
                 }
             }
@@ -30,7 +29,7 @@ struct LoginView: View {
         }
         if viewModel.isLoginSuccess {
             NavigationView {
-                RegisterView(viewModel: RegisterViewModel())
+                RegisterView(viewModel: RegisterViewModel(), loginViewModel: viewModel)
             }
         }
     }

@@ -8,10 +8,19 @@
 import SwiftUI
 
 struct FacebookButton: View {
+    
+    @ObservedObject var viewModel: LoginViewModel
+    @ObservedObject var registerViewModel: RegisterViewModel
+    var isRegister: Bool
+    
     var body: some View {
         HStack {
             Button(action: {
-                print("button pressed")
+                if isRegister {
+                    registerViewModel.facebookRegister()
+                } else{
+                    viewModel.facebookLogin()
+                }
             }) {
                 Image(Images.LoginView.facebook.rawValue)
                 Text("Continue with Facebook")
@@ -19,12 +28,6 @@ struct FacebookButton: View {
             }
             .modifier(ButtonTemplate(background: Color.appColor(.facebook)))
         }
-    }
-}
-
-struct FacebookButton_Previews: PreviewProvider {
-    static var previews: some View {
-        FacebookButton()
     }
 }
 

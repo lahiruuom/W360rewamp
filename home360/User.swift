@@ -19,3 +19,24 @@ struct User: Decodable {
         case surname, email
     }
 }
+
+
+//struct User: Decodable, Identifiable {
+//    //    let mediaReferences: [MediaReference]?
+//    var id: String = ""
+//    var givenName: String = ""
+//    var surname:  String = ""
+//
+//    init(id: String, givenName: String, surname: String) {
+//        self.id = id
+//        self.givenName = givenName
+//        self.surname = surname
+//    }
+//
+//    enum CodingKeys: String, CodingKey {
+//        //        case mediaReferences = "media_references"
+//        case id = "_id"
+//        case givenName = "given_name"
+//        case surname
+//    }
+//}

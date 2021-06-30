@@ -12,6 +12,7 @@ struct RegisterButton: View {
     
     var body: some View {
         Button("REGISTER") {
+            viewModel.loginType = "basic"
             viewModel.validatePasswordAndRegister()
         }
         .buttonStyle(CustomButtonStyle(background: Color.appColor(.lightBrown), textSize: 17, fontName: .Bold))

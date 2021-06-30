@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import FacebookLogin
 
 protocol RegisterViewModelProtocol: Any {
     var manager: RegisterRemoteDataManager? { get set }
@@ -17,17 +18,17 @@ class RegisterViewModel: ObservableObject, RegisterViewModelProtocol {
     private var cancellables: [AnyCancellable?] = []
     
     var manager: RegisterRemoteDataManager?
-    
     var persistance: PersistanceProtocol?
+    let loginManager = LoginManager()
     
-    @Published var givenName = "adsfasfa"
-    @Published var surname = "asfasfasf"
-    @Published var email = "asfaf@gmail.com"
-    @Published var loginType = "basic"
+    @Published var givenName = ""
+    @Published var surname = ""
+    @Published var email = ""
+    @Published var loginType = ""
     @Published var socialUserId = ""
     @Published var profileImageUrl = ""
-    @Published var password = "ddsads"
-    @Published var confirmPassword = "ddsads"
+    @Published var password = ""
+    @Published var confirmPassword = ""
     @Published var providerToken = ""
     @Published var isRegisterSuccess: Bool = false
     @Published var isAlertPresented: Bool = false
@@ -73,4 +74,38 @@ class RegisterViewModel: ObservableObject, RegisterViewModelProtocol {
         cancellables += [responsePublisher]
     }
     
+    func facebookRegister() {
+        loginManager.logIn(permissions: [.publicProfile, .email], viewController: nil) { loginResult in
+            switch loginResult {
+            case .failed(let error):
+                self.errorMessage = error.localizedDescription
+                self.isAlertPresented = true
+            case .cancelled:
+                self.errorMessage = "User cancelled login."
+                self.isAlertPresented = true
+            case .success(_, _, let accessToken):
+                GraphRequest(graphPath: "me",
+                             parameters: ["fields":"id,first_name,last_name,email,picture.width(100).height(100)"])
+                    .start { connection, result, error in
+                    if let result = result {
+                        let data = result as! [String : AnyObject]
+                        self.socialUserId = data["id"] as? String ?? ""
+                        self.givenName = data["first_name"] as? String ?? ""
+                        self.surname = data["last_name"] as? String ?? ""
+                        self.email = data["email"] as? String ?? ""
+                        self.loginType = "Facebook"
+                        let picture = data["picture"]?["data"] as AnyObject
+                        if let url = picture["url"] as? String {
+                            self.profileImageUrl = url
+                        }
+                        self.providerToken = accessToken!.tokenString
+                        self.register()
+                    } else{
+                        self.errorMessage = error?.localizedDescription ?? ""
+                        self.isAlertPresented = true
+                    }
+                }
+            }
+        }
+    }
 }

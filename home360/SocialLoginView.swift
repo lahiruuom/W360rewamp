@@ -9,7 +9,10 @@ import SwiftUI
 
 struct SocialLoginView: View {
     
+    @ObservedObject var viewModel: LoginViewModel
+    @ObservedObject var registerViewModel: RegisterViewModel
     var titleLabel: String
+    var isRegister: Bool
     
     var body: some View {
         ZStack {
@@ -19,7 +22,7 @@ struct SocialLoginView: View {
                 Text(titleLabel)
                     .font(Font.custom(Fonts.Medium.rawValue, size: 24))
                     .padding(EdgeInsets(top: 20, leading: 5, bottom: 34, trailing: 5))
-                FacebookButton()
+                FacebookButton(viewModel: viewModel, registerViewModel: registerViewModel, isRegister: isRegister)
                     .padding(EdgeInsets(top: 0, leading: 31, bottom: 29, trailing: 31))
                 GoogleLoginView()
                     .padding(EdgeInsets(top: 0, leading: 31, bottom: 29, trailing: 31))

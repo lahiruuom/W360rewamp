@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import FacebookLogin
+import GoogleSignIn
 
 @main
 struct home360App: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var persistance: PersistanceProtocol? = Persistance()
     
@@ -18,5 +21,22 @@ struct home360App: App {
                 StartView(viewModel: StartViewModel(isSessionIDExist: isSessionID))
             }
         }
+    }
+}
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        
+        // Facebook Signin
+        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        // Google Signin
+        GIDSignIn.sharedInstance().clientID = Config.SOCIAL_LOGIN.GOOGLE.CLIENT_ID
+        return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        ApplicationDelegate.shared.application(app, open: url, options: options)
+        return true
     }
 }

@@ -28,8 +28,11 @@ final class Cache<Key: Hashable, Value> {
     
     func insert(_ value: Value, forKey key: Key) {
         let date = dateProvider().addingTimeInterval(entryLifetime)
+        debugPrint(date)
         let entry = Entry(key: key, value: value, expirationDate: date)
+        debugPrint(entry)
         wrapped.setObject(entry, forKey: WrappedKey(key))
+        debugPrint(wrapped)
         keyTracker.keys.insert(key)
     }
     
