@@ -8,10 +8,21 @@
 import SwiftUI
 
 struct GoogleLoginView: View {
+    
+    @ObservedObject var viewModel: LoginViewModel
+    @ObservedObject var registerViewModel: RegisterViewModel
+    var isRegister: Bool
+    
     var body: some View {
         HStack {
             Button(action: {
-                print("button pressed")
+                if isRegister {
+                    registerViewModel.setupGoogleSignIn()
+                    registerViewModel.googleSignIn()
+                } else {
+                    viewModel.setupGoogleSignIn()
+                    viewModel.googleSignIn()
+                }
             }) {
                 Image(Images.LoginView.google.rawValue)
                     .resizable()
@@ -22,11 +33,5 @@ struct GoogleLoginView: View {
             .modifier(ButtonTemplate(background: .white))
             .frame(height: 44, alignment: .center)
         }
-    }
-}
-
-struct GoogleLoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        GoogleLoginView()
     }
 }

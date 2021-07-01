@@ -20,7 +20,7 @@
 		2A40818A267A185F0037B65F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A408189267A185F0037B65F /* RegisterView.swift */; };
 		2A40818D267A19E80037B65F /* RegisterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A40818C267A19E80037B65F /* RegisterButton.swift */; };
 		2A40818F267A1A010037B65F /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A40818E267A1A010037B65F /* RegisterViewModel.swift */; };
-		2A408192267A2A870037B65F /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 2A408191267A2A870037B65F /* SwiftPackageProductDependency */; };
+		2A408192267A2A870037B65F /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2A408191267A2A870037B65F /* KeychainSwift */; };
 		2A5A21A3267737F8002EF3F6 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21A2267737F8002EF3F6 /* StartView.swift */; };
 		2A5A21A7267738C6002EF3F6 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21A6267738C6002EF3F6 /* StartViewModel.swift */; };
 		2A5A21AB26774DDC002EF3F6 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21AA26774DDC002EF3F6 /* Images.swift */; };
@@ -63,13 +63,14 @@
 		2A8DEFE02675DD5400A0F334 /* NetworkCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFDF2675DD5400A0F334 /* NetworkCore.swift */; };
 		2A8DEFE22675DD8A00A0F334 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFE12675DD8A00A0F334 /* RequestService.swift */; };
 		2A8DEFE62675DDE600A0F334 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFE52675DDE600A0F334 /* Enviroment.swift */; };
-		2ABBB3F7268C6F200065B2C3 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 2ABBB3F6268C6F200065B2C3 /* SwiftPackageProductDependency */; };
+		2ABBB3F7268C6F200065B2C3 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 2ABBB3F6268C6F200065B2C3 /* FacebookLogin */; };
 		2ABBB3F9268C70170065B2C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ABBB3F8268C70170065B2C3 /* GoogleService-Info.plist */; };
 		2ADA1704267CA135005C20B6 /* ManualRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA1703267CA135005C20B6 /* ManualRegisterView.swift */; };
 		2ADA1706267D7B81005C20B6 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA1705267D7B81005C20B6 /* Register.swift */; };
 		2ADA1709267D7CD9005C20B6 /* RegisterRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA1708267D7CD9005C20B6 /* RegisterRemoteDataManager.swift */; };
 		2ADA170B267D7E2F005C20B6 /* RegisterRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA170A267D7E2F005C20B6 /* RegisterRes.swift */; };
-		2ADA1710267D92AF005C20B6 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 2ADA170F267D92AF005C20B6 /* SwiftPackageProductDependency */; };
+		2ADA1710267D92AF005C20B6 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2ADA170F267D92AF005C20B6 /* IQKeyboardManagerSwift */; };
+		2AE35085268D6E88004C0147 /* AppleSignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE35084268D6E88004C0147 /* AppleSignInCoordinator.swift */; };
 		35778D01903CF427BA202FA9 /* Pods_home360_home360UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A8A4CC0CBE01AA3133CE8E /* Pods_home360_home360UITests.framework */; };
 		7788078413CBA1F8CF1BF836 /* Pods_home360.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD9444CC1AB08FA9664CAC34 /* Pods_home360.framework */; };
 		BA44F2FD647167D3D54714CF /* Pods_home360Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C81492C20FFB6BA1C69BCB /* Pods_home360Tests.framework */; };
@@ -161,6 +162,8 @@
 		2ADA1705267D7B81005C20B6 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		2ADA1708267D7CD9005C20B6 /* RegisterRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRemoteDataManager.swift; sourceTree = "<group>"; };
 		2ADA170A267D7E2F005C20B6 /* RegisterRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRes.swift; sourceTree = "<group>"; };
+		2AE35084268D6E88004C0147 /* AppleSignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInCoordinator.swift; sourceTree = "<group>"; };
+		2AE35086268D71CA004C0147 /* home360.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = home360.entitlements; sourceTree = "<group>"; };
 		34C81492C20FFB6BA1C69BCB /* Pods_home360Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_home360Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CE436B792FF0ADC892B9D9 /* Pods-home360-home360UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home360-home360UITests.debug.xcconfig"; path = "Target Support Files/Pods-home360-home360UITests/Pods-home360-home360UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A88363CB6D2AE823F709A33C /* Pods-home360.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home360.debug.xcconfig"; path = "Target Support Files/Pods-home360/Pods-home360.debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,9 +179,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A408192267A2A870037B65F /* BuildFile in Frameworks */,
-				2ADA1710267D92AF005C20B6 /* BuildFile in Frameworks */,
-				2ABBB3F7268C6F200065B2C3 /* BuildFile in Frameworks */,
+				2A408192267A2A870037B65F /* KeychainSwift in Frameworks */,
+				2ADA1710267D92AF005C20B6 /* IQKeyboardManagerSwift in Frameworks */,
+				2ABBB3F7268C6F200065B2C3 /* FacebookLogin in Frameworks */,
 				7788078413CBA1F8CF1BF836 /* Pods_home360.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +324,7 @@
 		2A5A21A926774D99002EF3F6 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				2AE35083268D6E68004C0147 /* Delegates */,
 				2A4081782679E2AF0037B65F /* Entities */,
 				2A4081772679E2AA0037B65F /* DataManager */,
 				2A5A21AD26774F86002EF3F6 /* ViewModel */,
@@ -422,6 +426,7 @@
 		2A8DEF972675CACF00A0F334 /* home360 */ = {
 			isa = PBXGroup;
 			children = (
+				2AE35086268D71CA004C0147 /* home360.entitlements */,
 				2A8DEFC52675CB0F00A0F334 /* App */,
 				2A8DEFC62675CB5700A0F334 /* Extensions */,
 				2A8DEFC72675CB7800A0F334 /* Shared */,
@@ -549,6 +554,14 @@
 			name = Remote;
 			sourceTree = "<group>";
 		};
+		2AE35083268D6E68004C0147 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				2AE35084268D6E88004C0147 /* AppleSignInCoordinator.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
 		3DF4386C0F5A2042A7C9B8A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -569,7 +582,6 @@
 				047E829A6E6DBA0DC7AC5814 /* Pods-home360Tests.debug.xcconfig */,
 				C15C781D640E0CEB47F9A69A /* Pods-home360Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -593,9 +605,9 @@
 			);
 			name = home360;
 			packageProductDependencies = (
-				2A408191267A2A870037B65F /* SwiftPackageProductDependency */,
-				2ADA170F267D92AF005C20B6 /* SwiftPackageProductDependency */,
-				2ABBB3F6268C6F200065B2C3 /* SwiftPackageProductDependency */,
+				2A408191267A2A870037B65F /* KeychainSwift */,
+				2ADA170F267D92AF005C20B6 /* IQKeyboardManagerSwift */,
+				2ABBB3F6268C6F200065B2C3 /* FacebookLogin */,
 			);
 			productName = home360;
 			productReference = 2A8DEF952675CACF00A0F334 /* home360.app */;
@@ -673,9 +685,9 @@
 			);
 			mainGroup = 2A8DEF8C2675CACF00A0F334;
 			packageReferences = (
-				2A408190267A2A870037B65F /* RemoteSwiftPackageReference */,
-				2ADA170E267D92AE005C20B6 /* RemoteSwiftPackageReference */,
-				2ABBB3F5268C6F200065B2C3 /* RemoteSwiftPackageReference */,
+				2A408190267A2A870037B65F /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				2ADA170E267D92AE005C20B6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				2ABBB3F5268C6F200065B2C3 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 			);
 			productRefGroup = 2A8DEF962675CACF00A0F334 /* Products */;
 			projectDirPath = "";
@@ -898,6 +910,7 @@
 				2A5A21BE26776B2A002EF3F6 /* TextFieldView.swift in Sources */,
 				2A5A21DC26777A81002EF3F6 /* Fonts.swift in Sources */,
 				2A5A21AB26774DDC002EF3F6 /* Images.swift in Sources */,
+				2AE35085268D6E88004C0147 /* AppleSignInCoordinator.swift in Sources */,
 				2A8DEFD32675CDCC00A0F334 /* Cache.swift in Sources */,
 				2A4081722679C1F40037B65F /* View+Extension.swift in Sources */,
 				2A8DEFC92675CB8B00A0F334 /* SF.swift in Sources */,
@@ -1069,6 +1082,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = home360/home360.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"home360/Preview Content\"";
 				DEVELOPMENT_TEAM = WS4BP53MAH;
@@ -1240,7 +1254,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2A408190267A2A870037B65F /* RemoteSwiftPackageReference */ = {
+		2A408190267A2A870037B65F /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
 			requirement = {
@@ -1248,7 +1262,7 @@
 				minimumVersion = 19.0.0;
 			};
 		};
-		2ABBB3F5268C6F200065B2C3 /* RemoteSwiftPackageReference */ = {
+		2ABBB3F5268C6F200065B2C3 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
 			requirement = {
@@ -1256,7 +1270,7 @@
 				minimumVersion = 11.0.1;
 			};
 		};
-		2ADA170E267D92AE005C20B6 /* RemoteSwiftPackageReference */ = {
+		2ADA170E267D92AE005C20B6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
 			requirement = {
@@ -1267,19 +1281,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2A408191267A2A870037B65F /* SwiftPackageProductDependency */ = {
+		2A408191267A2A870037B65F /* KeychainSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2A408190267A2A870037B65F /* RemoteSwiftPackageReference */;
+			package = 2A408190267A2A870037B65F /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
 		};
-		2ABBB3F6268C6F200065B2C3 /* SwiftPackageProductDependency */ = {
+		2ABBB3F6268C6F200065B2C3 /* FacebookLogin */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2ABBB3F5268C6F200065B2C3 /* RemoteSwiftPackageReference */;
+			package = 2ABBB3F5268C6F200065B2C3 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
 			productName = FacebookLogin;
 		};
-		2ADA170F267D92AF005C20B6 /* SwiftPackageProductDependency */ = {
+		2ADA170F267D92AF005C20B6 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2ADA170E267D92AE005C20B6 /* RemoteSwiftPackageReference */;
+			package = 2ADA170E267D92AE005C20B6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -8,18 +8,20 @@
 import Foundation
 import Combine
 import FacebookLogin
+import GoogleSignIn
 
 protocol RegisterViewModelProtocol: Any {
     var manager: RegisterRemoteDataManager? { get set }
     var persistance: PersistanceProtocol? { get set }
 }
 
-class RegisterViewModel: ObservableObject, RegisterViewModelProtocol {
+class RegisterViewModel: NSObject, ObservableObject, RegisterViewModelProtocol {
     private var cancellables: [AnyCancellable?] = []
     
     var manager: RegisterRemoteDataManager?
     var persistance: PersistanceProtocol?
     let loginManager = LoginManager()
+    private lazy var appleSignInCoordinator = AppleSignInCoordinator(loginVM: LoginViewModel(), registerMV: self, isRegister: true)
     
     @Published var givenName = ""
     @Published var surname = ""
@@ -40,6 +42,10 @@ class RegisterViewModel: ObservableObject, RegisterViewModelProtocol {
         self.manager = manager
         self.persistance = persistance
         self.loadingState = loading
+    }
+    
+    func setupGoogleSignIn() {
+        GIDSignIn.sharedInstance().delegate = self
     }
     
     func validatePasswordAndRegister() {
@@ -107,5 +113,44 @@ class RegisterViewModel: ObservableObject, RegisterViewModelProtocol {
                 }
             }
         }
+    }
+    
+    func googleSignIn() {
+        if GIDSignIn.sharedInstance().currentUser == nil {
+            GIDSignIn.sharedInstance().presentingViewController = UIApplication.shared.windows.first?.rootViewController
+            GIDSignIn.sharedInstance().signIn()
+        }
+    }
+    
+    func attemptAppleSignIn() {
+        appleSignInCoordinator.handleAuthorizationAppleIDButtonPress()
+    }
+    
+}
+
+extension RegisterViewModel: GIDSignInDelegate {
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url)
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let error = error {
+            if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
+                print("The user has not signed in before or they have since signed out.")
+            } else {
+                print("\(error.localizedDescription)")
+            }
+            debugPrint(error.localizedDescription)
+            return
+        }
+        self.socialUserId = user.userID
+        self.email = user.profile.email
+        self.loginType = "google"
+        self.providerToken = user.authentication.idToken
+        self.givenName = user.profile.givenName
+        self.surname = user.profile.familyName
+        self.profileImageUrl = user.profile.imageURL(withDimension: 100).absoluteString
+        self.register()
     }
 }
