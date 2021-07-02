@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A058159268ED6CD00F068ED /* RootPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A058158268ED6CD00F068ED /* RootPresentationMode.swift */; };
 		2A22F07E26788E11002701ED /* SignInWithApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A22F07D26788E11002701ED /* SignInWithApple.swift */; };
 		2A4081702679C1590037B65F /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A40816F2679C1590037B65F /* UIApplication+Extension.swift */; };
 		2A4081722679C1F40037B65F /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4081712679C1F40037B65F /* View+Extension.swift */; };
@@ -50,6 +51,7 @@
 		2A5A21E026778881002EF3F6 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21DF26778881002EF3F6 /* Color+Extensions.swift */; };
 		2A687B51267A4EB000B563A2 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A687B50267A4EB000B563A2 /* APIResponse.swift */; };
 		2A74567B2678A6400084E100 /* TextFieldCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A74567A2678A6400084E100 /* TextFieldCustom.swift */; };
+		2A85DC31268F145900A301E6 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A85DC30268F145900A301E6 /* LoginTests.swift */; };
 		2A8DEF992675CACF00A0F334 /* home360App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEF982675CACF00A0F334 /* home360App.swift */; };
 		2A8DEF9D2675CAD000A0F334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A8DEF9C2675CAD000A0F334 /* Assets.xcassets */; };
 		2A8DEFA02675CAD000A0F334 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A8DEF9F2675CAD000A0F334 /* Preview Assets.xcassets */; };
@@ -95,6 +97,7 @@
 
 /* Begin PBXFileReference section */
 		047E829A6E6DBA0DC7AC5814 /* Pods-home360Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home360Tests.debug.xcconfig"; path = "Target Support Files/Pods-home360Tests/Pods-home360Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A058158268ED6CD00F068ED /* RootPresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresentationMode.swift; sourceTree = "<group>"; };
 		2A22F07D26788E11002701ED /* SignInWithApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithApple.swift; sourceTree = "<group>"; };
 		2A22F07F26788E85002701ED /* home360Release.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = home360Release.entitlements; sourceTree = "<group>"; };
 		2A40816F2679C1590037B65F /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
@@ -138,6 +141,7 @@
 		2A5A21DF26778881002EF3F6 /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		2A687B50267A4EB000B563A2 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		2A74567A2678A6400084E100 /* TextFieldCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCustom.swift; sourceTree = "<group>"; };
+		2A85DC30268F145900A301E6 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 		2A8DEF952675CACF00A0F334 /* home360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = home360.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8DEF982675CACF00A0F334 /* home360App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home360App.swift; sourceTree = "<group>"; };
 		2A8DEF9C2675CAD000A0F334 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -450,6 +454,7 @@
 			children = (
 				2A8DEFAA2675CAD000A0F334 /* home360Tests.swift */,
 				2A8DEFAC2675CAD000A0F334 /* Info.plist */,
+				2A85DC30268F145900A301E6 /* LoginTests.swift */,
 			);
 			path = home360Tests;
 			sourceTree = "<group>";
@@ -497,6 +502,7 @@
 				2A8DEFD22675CDCC00A0F334 /* Cache.swift */,
 				2A5A21AA26774DDC002EF3F6 /* Images.swift */,
 				2A5A21DB26777A81002EF3F6 /* Fonts.swift */,
+				2A058158268ED6CD00F068ED /* RootPresentationMode.swift */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -919,6 +925,7 @@
 				2A8DEFE02675DD5400A0F334 /* NetworkCore.swift in Sources */,
 				2A8DEFE62675DDE600A0F334 /* Enviroment.swift in Sources */,
 				2A5A21BC26776ADC002EF3F6 /* GoogleLoginView.swift in Sources */,
+				2A058159268ED6CD00F068ED /* RootPresentationMode.swift in Sources */,
 				2A4081762679D3D80037B65F /* Config.swift in Sources */,
 				2A4081812679E4680037B65F /* User.swift in Sources */,
 				2A4081832679E4870037B65F /* MediaReference.swift in Sources */,
@@ -933,6 +940,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A8DEFAB2675CAD000A0F334 /* home360Tests.swift in Sources */,
+				2A85DC31268F145900A301E6 /* LoginTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

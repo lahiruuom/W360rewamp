@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ManualRegisterView: View {
     
+    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     @ObservedObject var viewModel: RegisterViewModel
     
     var body: some View {
@@ -25,7 +26,7 @@ struct ManualRegisterView: View {
                             .modifier(TextTemplate(textColor: .gray, textSize: 18, fontName: .Regular))
                             .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 0))
                         Button("Login"){
-                            
+                            presentationMode.wrappedValue.dismiss()
                         }
                         .foregroundColor(.black)
                         .font(Font.custom(Fonts.Medium.rawValue, size: 18))

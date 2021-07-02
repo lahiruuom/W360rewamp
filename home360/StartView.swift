@@ -8,27 +8,39 @@
 import SwiftUI
 
 struct StartView: View {
-    @ObservedObject var viewModel: StartViewModel
     
-    @State var isActive:Bool = false
+    @State private var navigationForTab_0_0_View = false
+    @ObservedObject var viewModel: StartViewModel
+    @State var isActive: Bool = false
     
     var body: some View {
-        VStack {
-            if self.isActive {
-                RegisterView(viewModel: RegisterViewModel(), loginViewModel: LoginViewModel())
-            } else {
-                Image(Images.StartView.StartIcon.rawValue)
-                    .resizable()
-                    .frame(width: 200, height: 200, alignment: .center)
-                    .scaledToFit()
+        NavigationView {
+            VStack {
+                if self.isActive {
+                    NavigationLink(
+                        destination: LoginView(viewModel: .init())
+                            .navigationBarTitle("")
+                            .navigationBarHidden(true),
+                        isActive: .constant(true)
+                    ) {
+                        EmptyView()
+                    }
+                } else {
+                    Image(Images.StartView.StartIcon.rawValue)
+                        .resizable()
+                        .frame(width: 200, height: 200, alignment: .center)
+                        .scaledToFit()
+                }
             }
-        }
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                withAnimation {
-                    self.isActive = true
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    withAnimation {
+                        self.isActive = true
+                    }
                 }
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
+        .environment(\.rootPresentationMode, self.$isActive)
     }
 }

@@ -10,6 +10,7 @@ import Foundation
 
 struct ManualLoginView: View {
     @ObservedObject var viewModel: LoginViewModel
+    @State var isLinkActive = false
     
     var body: some View {
         ZStack(alignment: .leading) {
@@ -26,13 +27,19 @@ struct ManualLoginView: View {
                     HStack {
                         Text("New member?")
                             .modifier(TextTemplate(textColor: .gray, textSize: 18, fontName: .Regular))
-                        Button(action: {
-                            
-                        }, label: {
-                            Text("Register")
-                                .underline()
-                                .modifier(TextTemplate(textColor: .black, textSize: 18, fontName: .Regular))
-                        })
+                        NavigationLink(
+                            destination: RegisterView(viewModel: RegisterViewModel(), loginViewModel: viewModel)
+                                .navigationBarTitle("")
+                                .navigationBarHidden(true),
+                            isActive: $isLinkActive) {
+                            Button(action: {
+                                isLinkActive = true
+                            }, label: {
+                                Text("Register")
+                                    .underline()
+                                    .modifier(TextTemplate(textColor: .black, textSize: 18, fontName: .Regular))
+                            })
+                        }
                         Text("here")
                             .modifier(TextTemplate(textColor: .gray, textSize: 18, fontName: .Regular))
                     }
