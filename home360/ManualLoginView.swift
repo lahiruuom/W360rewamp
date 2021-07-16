@@ -47,7 +47,7 @@ struct ManualLoginView: View {
                 .padding(EdgeInsets(top: 0, leading: 16, bottom: 20, trailing: 16))
                 TextFieldView(placeholder: "Email ID", text: $viewModel.username)
                     .padding(EdgeInsets(top: 0, leading: 31, bottom: 16, trailing: 31))
-                TextFieldView(placeholder: "Password", text: $viewModel.password)
+                TextFieldView(placeholder: "Password", text: $viewModel.password, isSecureField: true)
                     .padding(EdgeInsets(top: 0, leading: 31, bottom: 16, trailing: 31))
                 LoginButton(viewModel: viewModel)
                     .padding(EdgeInsets(top: 0, leading: 31, bottom: 16, trailing: 31))

@@ -13,6 +13,10 @@ import GoogleSignIn
 protocol RegisterViewModelProtocol: Any {
     var manager: RegisterRemoteDataManager? { get set }
     var persistance: PersistanceProtocol? { get set }
+    func register()
+    func facebookRegister()
+    func googleSignIn()
+    func attemptAppleSignIn()
 }
 
 class RegisterViewModel: NSObject, ObservableObject, RegisterViewModelProtocol {
@@ -93,24 +97,24 @@ class RegisterViewModel: NSObject, ObservableObject, RegisterViewModelProtocol {
                 GraphRequest(graphPath: "me",
                              parameters: ["fields":"id,first_name,last_name,email,picture.width(100).height(100)"])
                     .start { connection, result, error in
-                    if let result = result {
-                        let data = result as! [String : AnyObject]
-                        self.socialUserId = data["id"] as? String ?? ""
-                        self.givenName = data["first_name"] as? String ?? ""
-                        self.surname = data["last_name"] as? String ?? ""
-                        self.email = data["email"] as? String ?? ""
-                        self.loginType = "Facebook"
-                        let picture = data["picture"]?["data"] as AnyObject
-                        if let url = picture["url"] as? String {
-                            self.profileImageUrl = url
+                        if let result = result {
+                            let data = result as! [String : AnyObject]
+                            self.socialUserId = data["id"] as? String ?? ""
+                            self.givenName = data["first_name"] as? String ?? ""
+                            self.surname = data["last_name"] as? String ?? ""
+                            self.email = data["email"] as? String ?? ""
+                            self.loginType = "Facebook"
+                            let picture = data["picture"]?["data"] as AnyObject
+                            if let url = picture["url"] as? String {
+                                self.profileImageUrl = url
+                            }
+                            self.providerToken = accessToken!.tokenString
+                            self.register()
+                        } else{
+                            self.errorMessage = error?.localizedDescription ?? ""
+                            self.isAlertPresented = true
                         }
-                        self.providerToken = accessToken!.tokenString
-                        self.register()
-                    } else{
-                        self.errorMessage = error?.localizedDescription ?? ""
-                        self.isAlertPresented = true
                     }
-                }
             }
         }
     }

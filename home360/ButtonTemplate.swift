@@ -18,7 +18,7 @@ struct ButtonTemplate: ViewModifier {
     func body(content: Content) -> some View {
         return content
             .padding()
-            .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: .infinity)
+            .frame(minWidth: 0, maxWidth: .infinity)
             .background(RoundedRectangle(cornerRadius: cornerRadius)
                             .fill(background)
                             .shadow(color: .gray, radius: 2, x: 0, y: 2))

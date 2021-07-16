@@ -47,9 +47,7 @@ class AppleSignInCoordinator: NSObject, ASAuthorizationControllerDelegate {
                 registerViewModel.providerToken = thirdPartyToken
                 registerViewModel.register()
             } else {
-                loginViewModel.username = credential.email ?? ""
-                loginViewModel.loginType = "apple"
-                loginViewModel.thirdPartyToken = thirdPartyToken
+                loginViewModel.credential = Credential(loginType: "apple", email: credential.email ?? "", password: "", thirdPartyToken: thirdPartyToken)
                 loginViewModel.login()
             }
         }

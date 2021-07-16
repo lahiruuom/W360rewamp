@@ -12,7 +12,7 @@ struct LoginButton: View {
     
     var body: some View {
         Button("LOGIN") {
-            viewModel.loginType = "basic"
+            viewModel.credential = Credential(loginType: "basic", email:  viewModel.username, password: viewModel.password, thirdPartyToken: "")
             viewModel.login()
         }
         .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))

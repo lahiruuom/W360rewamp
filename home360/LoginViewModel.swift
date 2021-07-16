@@ -13,6 +13,10 @@ import GoogleSignIn
 protocol LoginViewModelProtocol: Any {
     var manager: LoginRemoteDataManagerProtocol? { get set }
     var persistance: PersistanceProtocol? { get set }
+    func login()
+    func facebookLogin()
+    func googleSignIn()
+    func attemptAppleSignIn()
 }
 
 class LoginViewModel: NSObject, ObservableObject, LoginViewModelProtocol {
@@ -25,11 +29,11 @@ class LoginViewModel: NSObject, ObservableObject, LoginViewModelProtocol {
     
     @Published var username = ""
     @Published var password = ""
-    @Published var loginType = ""
-    @Published var thirdPartyToken = ""
+    @Published var credential: Credential!
     @Published var isLoginSuccess: Bool = false
     @Published var isAlertPresented: Bool = false
     @Published var errorMessage: String = ""
+    
     internal var loadingState: LoadingStateProtocol
     private static let cache = Cache<String, User>()
     
@@ -46,7 +50,6 @@ class LoginViewModel: NSObject, ObservableObject, LoginViewModelProtocol {
     
     func login() {
         loadingState.isLoading = true
-        let credential = Credential(loginType: loginType, email: username, password: password, thirdPartyToken: thirdPartyToken)
         let responsePublisher = manager?.login(credential)
             .print()
             .receive(on: DispatchQueue.main)
@@ -85,10 +88,7 @@ class LoginViewModel: NSObject, ObservableObject, LoginViewModelProtocol {
                 GraphRequest(graphPath: "me", parameters: ["fields":"id,first_name,last_name,email,picture.width(100).height(100)"]).start { [self] connection, result, error in
                     if let result = result {
                         let data = result as! [String : AnyObject]
-                        self.username = data["email"] as? String ?? ""
-                        self.password = ""
-                        self.thirdPartyToken = accessToken!.tokenString
-                        self.loginType = "Facebook"
+                        self.credential = Credential(loginType: "Facebook", email: data["email"] as? String ?? "", password: "", thirdPartyToken: accessToken!.tokenString)
                         self.login()
                     } else{
                         self.errorMessage = error?.localizedDescription ?? ""
@@ -128,8 +128,6 @@ extension LoginViewModel: GIDSignInDelegate {
             debugPrint(error.localizedDescription)
             return
         }
-        self.username = user.profile.email
-        self.loginType = "google"
-        self.thirdPartyToken = user.authentication.idToken
+        self.credential = Credential(loginType: "google", email:user.profile.email, password: "", thirdPartyToken: user.authentication.idToken)
     }
 }

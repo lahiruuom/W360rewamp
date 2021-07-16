@@ -48,7 +48,6 @@
 		2A5A21DA2677782C002EF3F6 /* ButtonTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21D92677782C002EF3F6 /* ButtonTemplate.swift */; };
 		2A5A21DC26777A81002EF3F6 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21DB26777A81002EF3F6 /* Fonts.swift */; };
 		2A5A21DE26778047002EF3F6 /* TextTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21DD26778047002EF3F6 /* TextTemplate.swift */; };
-		2A5A21E026778881002EF3F6 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21DF26778881002EF3F6 /* Color+Extensions.swift */; };
 		2A687B51267A4EB000B563A2 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A687B50267A4EB000B563A2 /* APIResponse.swift */; };
 		2A74567B2678A6400084E100 /* TextFieldCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A74567A2678A6400084E100 /* TextFieldCustom.swift */; };
 		2A85DC31268F145900A301E6 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A85DC30268F145900A301E6 /* LoginTests.swift */; };
@@ -65,8 +64,10 @@
 		2A8DEFE02675DD5400A0F334 /* NetworkCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFDF2675DD5400A0F334 /* NetworkCore.swift */; };
 		2A8DEFE22675DD8A00A0F334 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFE12675DD8A00A0F334 /* RequestService.swift */; };
 		2A8DEFE62675DDE600A0F334 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFE52675DDE600A0F334 /* Enviroment.swift */; };
+		2AAA0002269846BC0020390A /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAA0001269846BC0020390A /* Color+Extensions.swift */; };
 		2ABBB3F7268C6F200065B2C3 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 2ABBB3F6268C6F200065B2C3 /* FacebookLogin */; };
 		2ABBB3F9268C70170065B2C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ABBB3F8268C70170065B2C3 /* GoogleService-Info.plist */; };
+		2AC2E9B626A1A845003C20FF /* LoginMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2E9B526A1A845003C20FF /* LoginMockService.swift */; };
 		2ADA1704267CA135005C20B6 /* ManualRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA1703267CA135005C20B6 /* ManualRegisterView.swift */; };
 		2ADA1706267D7B81005C20B6 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA1705267D7B81005C20B6 /* Register.swift */; };
 		2ADA1709267D7CD9005C20B6 /* RegisterRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA1708267D7CD9005C20B6 /* RegisterRemoteDataManager.swift */; };
@@ -138,7 +139,6 @@
 		2A5A21D92677782C002EF3F6 /* ButtonTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTemplate.swift; sourceTree = "<group>"; };
 		2A5A21DB26777A81002EF3F6 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		2A5A21DD26778047002EF3F6 /* TextTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTemplate.swift; sourceTree = "<group>"; };
-		2A5A21DF26778881002EF3F6 /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		2A687B50267A4EB000B563A2 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		2A74567A2678A6400084E100 /* TextFieldCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCustom.swift; sourceTree = "<group>"; };
 		2A85DC30268F145900A301E6 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
@@ -161,7 +161,9 @@
 		2A8DEFDF2675DD5400A0F334 /* NetworkCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCore.swift; sourceTree = "<group>"; };
 		2A8DEFE12675DD8A00A0F334 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
 		2A8DEFE52675DDE600A0F334 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
+		2AAA0001269846BC0020390A /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		2ABBB3F8268C70170065B2C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2AC2E9B526A1A845003C20FF /* LoginMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMockService.swift; sourceTree = "<group>"; };
 		2ADA1703267CA135005C20B6 /* ManualRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualRegisterView.swift; sourceTree = "<group>"; };
 		2ADA1705267D7B81005C20B6 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		2ADA1708267D7CD9005C20B6 /* RegisterRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRemoteDataManager.swift; sourceTree = "<group>"; };
@@ -452,9 +454,9 @@
 		2A8DEFA92675CAD000A0F334 /* home360Tests */ = {
 			isa = PBXGroup;
 			children = (
+				2AC2E9B426A1743D003C20FF /* Login */,
 				2A8DEFAA2675CAD000A0F334 /* home360Tests.swift */,
 				2A8DEFAC2675CAD000A0F334 /* Info.plist */,
-				2A85DC30268F145900A301E6 /* LoginTests.swift */,
 			);
 			path = home360Tests;
 			sourceTree = "<group>";
@@ -484,7 +486,7 @@
 		2A8DEFC62675CB5700A0F334 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				2A5A21DF26778881002EF3F6 /* Color+Extensions.swift */,
+				2AAA0001269846BC0020390A /* Color+Extensions.swift */,
 				2A40816F2679C1590037B65F /* UIApplication+Extension.swift */,
 				2A4081712679C1F40037B65F /* View+Extension.swift */,
 			);
@@ -500,9 +502,9 @@
 				2A8DEFCD2675CC8900A0F334 /* Persistance.swift */,
 				2A8DEFCF2675CD5900A0F334 /* Constants.swift */,
 				2A8DEFD22675CDCC00A0F334 /* Cache.swift */,
+				2A058158268ED6CD00F068ED /* RootPresentationMode.swift */,
 				2A5A21AA26774DDC002EF3F6 /* Images.swift */,
 				2A5A21DB26777A81002EF3F6 /* Fonts.swift */,
-				2A058158268ED6CD00F068ED /* RootPresentationMode.swift */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -550,6 +552,15 @@
 				2A4081752679D3D80037B65F /* Config.swift */,
 			);
 			name = NetworkCore;
+			sourceTree = "<group>";
+		};
+		2AC2E9B426A1743D003C20FF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2A85DC30268F145900A301E6 /* LoginTests.swift */,
+				2AC2E9B526A1A845003C20FF /* LoginMockService.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		2ADA1707267D7CA0005C20B6 /* Remote */ = {
@@ -895,7 +906,6 @@
 				2ADA170B267D7E2F005C20B6 /* RegisterRes.swift in Sources */,
 				2A5A21A7267738C6002EF3F6 /* StartViewModel.swift in Sources */,
 				2A74567B2678A6400084E100 /* TextFieldCustom.swift in Sources */,
-				2A5A21E026778881002EF3F6 /* Color+Extensions.swift in Sources */,
 				2A40818D267A19E80037B65F /* RegisterButton.swift in Sources */,
 				2A8DEFD02675CD5900A0F334 /* Constants.swift in Sources */,
 				2A5A21B426776A72002EF3F6 /* ManualLoginView.swift in Sources */,
@@ -914,6 +924,7 @@
 				2A8DEFDB2675DA2D00A0F334 /* ActivityIndicator.swift in Sources */,
 				2A22F07E26788E11002701ED /* SignInWithApple.swift in Sources */,
 				2A5A21BE26776B2A002EF3F6 /* TextFieldView.swift in Sources */,
+				2AAA0002269846BC0020390A /* Color+Extensions.swift in Sources */,
 				2A5A21DC26777A81002EF3F6 /* Fonts.swift in Sources */,
 				2A5A21AB26774DDC002EF3F6 /* Images.swift in Sources */,
 				2AE35085268D6E88004C0147 /* AppleSignInCoordinator.swift in Sources */,
@@ -939,6 +950,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AC2E9B626A1A845003C20FF /* LoginMockService.swift in Sources */,
 				2A8DEFAB2675CAD000A0F334 /* home360Tests.swift in Sources */,
 				2A85DC31268F145900A301E6 /* LoginTests.swift in Sources */,
 			);
