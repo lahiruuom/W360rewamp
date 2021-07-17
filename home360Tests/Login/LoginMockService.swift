@@ -15,8 +15,9 @@ class LoginMockService: LoginViewModelProtocol {
     
     var manager: LoginRemoteDataManagerProtocol?
     var persistance: PersistanceProtocol?
-    
+    var isLogged: Bool = false
     var credential: Credential!
+    let expectationTest = XCTestExpectation(description: "Loging API")
     
     init(manager: LoginRemoteDataManagerProtocol = LoginRemoteDataManager(),
          persistance: PersistanceProtocol = Persistance()) {
@@ -25,7 +26,14 @@ class LoginMockService: LoginViewModelProtocol {
     }
     
     func login() {
-        
+        let responsePublisher = manager?.login(credential)
+            .print()
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { _ in }) { response in
+                self.isLogged = !response.error
+                self.expectationTest.fulfill()
+            }
+        cancellables += [responsePublisher]
     }
     
     func facebookLogin() {

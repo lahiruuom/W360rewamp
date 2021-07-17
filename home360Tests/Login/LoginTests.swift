@@ -11,45 +11,21 @@ import Combine
 
 class LoginTests: XCTestCase {
     private var cancellables: [AnyCancellable?] = []
-    var viewModel: LoginViewModel!
     var mockUserService: LoginMockService!
     
     override func setUp() {
-        viewModel = LoginViewModel()
         mockUserService = LoginMockService()
     }
     
     func testLoginWithCorrectDetailsSetsSuccessPresentedToTrue() {
-        var loginResponse: LoginResponse?
-        var isLogged = false
-        
-        let promise = expectation(description: "Loging API")
-        let credential = Credential(
+        mockUserService.credential = Credential(
             loginType: "basic",
             email: "lahirumm92@gmail.com",
             password: "LahiruMM92@",
             thirdPartyToken: "")
-        let responsePublisher = mockUserService.manager?.login(credential)
-            .print()
-            .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { [] completion in
-                switch completion {
-                case .failure:
-                    isLogged = false
-                case .finished:
-                    isLogged = true
-                }
-            }, receiveValue: { response in
-                loginResponse = response.payload
-                isLogged = true
-                promise.fulfill()
-            })
-        cancellables += [responsePublisher]
-        
-        wait(for: [promise], timeout: 10.0)
-        
-        XCTAssertNotNil(loginResponse)
-        XCTAssertTrue(isLogged)
+        mockUserService.login()
+        wait(for: [mockUserService.expectationTest], timeout: 10.0)
+        XCTAssertTrue(mockUserService.isLogged)
     }
     
 }
