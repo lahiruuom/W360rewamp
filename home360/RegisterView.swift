@@ -1,20 +1,23 @@
 //
-//  LoginView.swift
+//  RegisterView.swift
 //  home360
 //
-//  Created by Lahiru Manulanka Munasinghe on 2021-06-14.
+//  Created by Lahiru Manulanka Munasinghe on 2021-06-16.
 //
 
 import SwiftUI
 
-struct LoginView: View {
-    @ObservedObject var viewModel: LoginViewModel
+struct RegisterView: View {
+    
+    @ObservedObject var viewModel: RegisterViewModel
+    @ObservedObject var loginViewModel: LoginViewModel
+    
     var body: some View {
         ActivityIndicatorView(loadingState: viewModel.loadingState as! LoadingState) {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .leading) {
-                    ManualLoginView(viewModel: viewModel)
-                    SocialLoginView(viewModel: viewModel, registerViewModel: RegisterViewModel(), titleLabel: "Or, login with", isRegister: false)
+                    ManualRegisterView(viewModel: viewModel)
+                    SocialLoginView(viewModel: loginViewModel, registerViewModel: viewModel, titleLabel: "Or, Sign up with", isRegister: true)
                         .padding(EdgeInsets(top: -10, leading: 0, bottom: 0, trailing: 0))
                 }
             }
@@ -25,11 +28,6 @@ struct LoginView: View {
             }
             .alert(isPresented: self.$viewModel.isAlertPresented) {
                 Alert(title: Text("SORRY!"), message: Text(self.viewModel.errorMessage), dismissButton: .default(Text("OK")))
-            }
-        }
-        if viewModel.isLoginSuccess {
-            NavigationView {
-                RegisterView(viewModel: RegisterViewModel(), loginViewModel: viewModel)
             }
         }
     }

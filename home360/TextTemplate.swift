@@ -14,8 +14,7 @@ struct TextTemplate: ViewModifier {
     
     func body(content: Content) -> some View {
         return content
-            .padding()
-            .background(textColor)
+            .foregroundColor(textColor)
             .font(Font.custom(fontName.rawValue, size: textSize))
     }
 }

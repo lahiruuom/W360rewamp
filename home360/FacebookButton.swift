@@ -8,24 +8,26 @@
 import SwiftUI
 
 struct FacebookButton: View {
+    
+    @ObservedObject var viewModel: LoginViewModel
+    @ObservedObject var registerViewModel: RegisterViewModel
+    var isRegister: Bool
+    
     var body: some View {
         HStack {
             Button(action: {
-                print("button pressed")
+                if isRegister {
+                    registerViewModel.facebookRegister()
+                } else{
+                    viewModel.facebookLogin()
+                }
             }) {
                 Image(Images.LoginView.facebook.rawValue)
                 Text("Continue with Facebook")
-                    .font(Font.custom(Fonts.Bold.rawValue, size: 17))
+                    .modifier(TextTemplate(textColor: .white, textSize: 17, fontName: .Medium))
             }
             .modifier(ButtonTemplate(background: Color.appColor(.facebook)))
-            .frame(height: 44, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         }
-    }
-}
-
-struct FacebookButton_Previews: PreviewProvider {
-    static var previews: some View {
-        FacebookButton()
     }
 }
 

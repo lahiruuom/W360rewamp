@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A058159268ED6CD00F068ED /* RootPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A058158268ED6CD00F068ED /* RootPresentationMode.swift */; };
+		2A22F07E26788E11002701ED /* SignInWithApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A22F07D26788E11002701ED /* SignInWithApple.swift */; };
+		2A4081702679C1590037B65F /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A40816F2679C1590037B65F /* UIApplication+Extension.swift */; };
+		2A4081722679C1F40037B65F /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4081712679C1F40037B65F /* View+Extension.swift */; };
+		2A4081742679D20D0037B65F /* AuthEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4081732679D20D0037B65F /* AuthEndpoint.swift */; };
+		2A4081762679D3D80037B65F /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4081752679D3D80037B65F /* Config.swift */; };
+		2A40817B2679E2D90037B65F /* LoginRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A40817A2679E2D90037B65F /* LoginRemoteDataManager.swift */; };
+		2A40817D2679E3420037B65F /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A40817C2679E3420037B65F /* Credential.swift */; };
+		2A40817F2679E4030037B65F /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A40817E2679E4030037B65F /* LoginResponse.swift */; };
+		2A4081812679E4680037B65F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4081802679E4680037B65F /* User.swift */; };
+		2A4081832679E4870037B65F /* MediaReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4081822679E4870037B65F /* MediaReference.swift */; };
+		2A40818A267A185F0037B65F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A408189267A185F0037B65F /* RegisterView.swift */; };
+		2A40818D267A19E80037B65F /* RegisterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A40818C267A19E80037B65F /* RegisterButton.swift */; };
+		2A40818F267A1A010037B65F /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A40818E267A1A010037B65F /* RegisterViewModel.swift */; };
+		2A408192267A2A870037B65F /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2A408191267A2A870037B65F /* KeychainSwift */; };
 		2A5A21A3267737F8002EF3F6 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21A2267737F8002EF3F6 /* StartView.swift */; };
 		2A5A21A7267738C6002EF3F6 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21A6267738C6002EF3F6 /* StartViewModel.swift */; };
 		2A5A21AB26774DDC002EF3F6 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21AA26774DDC002EF3F6 /* Images.swift */; };
@@ -33,23 +48,35 @@
 		2A5A21DA2677782C002EF3F6 /* ButtonTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21D92677782C002EF3F6 /* ButtonTemplate.swift */; };
 		2A5A21DC26777A81002EF3F6 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21DB26777A81002EF3F6 /* Fonts.swift */; };
 		2A5A21DE26778047002EF3F6 /* TextTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21DD26778047002EF3F6 /* TextTemplate.swift */; };
-		2A5A21E026778881002EF3F6 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A21DF26778881002EF3F6 /* Color+Extensions.swift */; };
+		2A687B51267A4EB000B563A2 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A687B50267A4EB000B563A2 /* APIResponse.swift */; };
+		2A74567B2678A6400084E100 /* TextFieldCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A74567A2678A6400084E100 /* TextFieldCustom.swift */; };
+		2A85DC31268F145900A301E6 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A85DC30268F145900A301E6 /* LoginTests.swift */; };
 		2A8DEF992675CACF00A0F334 /* home360App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEF982675CACF00A0F334 /* home360App.swift */; };
-		2A8DEF9B2675CACF00A0F334 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEF9A2675CACF00A0F334 /* ContentView.swift */; };
 		2A8DEF9D2675CAD000A0F334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A8DEF9C2675CAD000A0F334 /* Assets.xcassets */; };
 		2A8DEFA02675CAD000A0F334 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A8DEF9F2675CAD000A0F334 /* Preview Assets.xcassets */; };
 		2A8DEFAB2675CAD000A0F334 /* home360Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFAA2675CAD000A0F334 /* home360Tests.swift */; };
 		2A8DEFB62675CAD000A0F334 /* home360UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFB52675CAD000A0F334 /* home360UITests.swift */; };
 		2A8DEFC92675CB8B00A0F334 /* SF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFC82675CB8B00A0F334 /* SF.swift */; };
-		2A8DEFCC2675CC6100A0F334 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2A8DEFCB2675CC6100A0F334 /* KeychainSwift */; };
 		2A8DEFCE2675CC8900A0F334 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFCD2675CC8900A0F334 /* Persistance.swift */; };
 		2A8DEFD02675CD5900A0F334 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFCF2675CD5900A0F334 /* Constants.swift */; };
 		2A8DEFD32675CDCC00A0F334 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFD22675CDCC00A0F334 /* Cache.swift */; };
 		2A8DEFDB2675DA2D00A0F334 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFDA2675DA2D00A0F334 /* ActivityIndicator.swift */; };
 		2A8DEFE02675DD5400A0F334 /* NetworkCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFDF2675DD5400A0F334 /* NetworkCore.swift */; };
 		2A8DEFE22675DD8A00A0F334 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFE12675DD8A00A0F334 /* RequestService.swift */; };
-		2A8DEFE42675DDB500A0F334 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFE32675DDB500A0F334 /* ServiceError.swift */; };
 		2A8DEFE62675DDE600A0F334 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DEFE52675DDE600A0F334 /* Enviroment.swift */; };
+		2AAA0002269846BC0020390A /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAA0001269846BC0020390A /* Color+Extensions.swift */; };
+		2ABBB3F7268C6F200065B2C3 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 2ABBB3F6268C6F200065B2C3 /* FacebookLogin */; };
+		2ABBB3F9268C70170065B2C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ABBB3F8268C70170065B2C3 /* GoogleService-Info.plist */; };
+		2AC2E9B626A1A845003C20FF /* LoginMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2E9B526A1A845003C20FF /* LoginMockService.swift */; };
+		2ADA1704267CA135005C20B6 /* ManualRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA1703267CA135005C20B6 /* ManualRegisterView.swift */; };
+		2ADA1706267D7B81005C20B6 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA1705267D7B81005C20B6 /* Register.swift */; };
+		2ADA1709267D7CD9005C20B6 /* RegisterRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA1708267D7CD9005C20B6 /* RegisterRemoteDataManager.swift */; };
+		2ADA170B267D7E2F005C20B6 /* RegisterRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA170A267D7E2F005C20B6 /* RegisterRes.swift */; };
+		2ADA1710267D92AF005C20B6 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2ADA170F267D92AF005C20B6 /* IQKeyboardManagerSwift */; };
+		2AE35085268D6E88004C0147 /* AppleSignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE35084268D6E88004C0147 /* AppleSignInCoordinator.swift */; };
+		35778D01903CF427BA202FA9 /* Pods_home360_home360UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A8A4CC0CBE01AA3133CE8E /* Pods_home360_home360UITests.framework */; };
+		7788078413CBA1F8CF1BF836 /* Pods_home360.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD9444CC1AB08FA9664CAC34 /* Pods_home360.framework */; };
+		BA44F2FD647167D3D54714CF /* Pods_home360Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C81492C20FFB6BA1C69BCB /* Pods_home360Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +97,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		047E829A6E6DBA0DC7AC5814 /* Pods-home360Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home360Tests.debug.xcconfig"; path = "Target Support Files/Pods-home360Tests/Pods-home360Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A058158268ED6CD00F068ED /* RootPresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresentationMode.swift; sourceTree = "<group>"; };
+		2A22F07D26788E11002701ED /* SignInWithApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithApple.swift; sourceTree = "<group>"; };
+		2A22F07F26788E85002701ED /* home360Release.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = home360Release.entitlements; sourceTree = "<group>"; };
+		2A40816F2679C1590037B65F /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		2A4081712679C1F40037B65F /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		2A4081732679D20D0037B65F /* AuthEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEndpoint.swift; sourceTree = "<group>"; };
+		2A4081752679D3D80037B65F /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		2A40817A2679E2D90037B65F /* LoginRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRemoteDataManager.swift; sourceTree = "<group>"; };
+		2A40817C2679E3420037B65F /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		2A40817E2679E4030037B65F /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		2A4081802679E4680037B65F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2A4081822679E4870037B65F /* MediaReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaReference.swift; sourceTree = "<group>"; };
+		2A408189267A185F0037B65F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		2A40818C267A19E80037B65F /* RegisterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButton.swift; sourceTree = "<group>"; };
+		2A40818E267A1A010037B65F /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		2A5A21A2267737F8002EF3F6 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		2A5A21A6267738C6002EF3F6 /* StartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
 		2A5A21AA26774DDC002EF3F6 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
@@ -96,10 +139,11 @@
 		2A5A21D92677782C002EF3F6 /* ButtonTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTemplate.swift; sourceTree = "<group>"; };
 		2A5A21DB26777A81002EF3F6 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		2A5A21DD26778047002EF3F6 /* TextTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTemplate.swift; sourceTree = "<group>"; };
-		2A5A21DF26778881002EF3F6 /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		2A687B50267A4EB000B563A2 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		2A74567A2678A6400084E100 /* TextFieldCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCustom.swift; sourceTree = "<group>"; };
+		2A85DC30268F145900A301E6 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 		2A8DEF952675CACF00A0F334 /* home360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = home360.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8DEF982675CACF00A0F334 /* home360App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home360App.swift; sourceTree = "<group>"; };
-		2A8DEF9A2675CACF00A0F334 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2A8DEF9C2675CAD000A0F334 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A8DEF9F2675CAD000A0F334 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A8DEFA12675CAD000A0F334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,8 +160,24 @@
 		2A8DEFDA2675DA2D00A0F334 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		2A8DEFDF2675DD5400A0F334 /* NetworkCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCore.swift; sourceTree = "<group>"; };
 		2A8DEFE12675DD8A00A0F334 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
-		2A8DEFE32675DDB500A0F334 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		2A8DEFE52675DDE600A0F334 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
+		2AAA0001269846BC0020390A /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		2ABBB3F8268C70170065B2C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2AC2E9B526A1A845003C20FF /* LoginMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMockService.swift; sourceTree = "<group>"; };
+		2ADA1703267CA135005C20B6 /* ManualRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualRegisterView.swift; sourceTree = "<group>"; };
+		2ADA1705267D7B81005C20B6 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		2ADA1708267D7CD9005C20B6 /* RegisterRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRemoteDataManager.swift; sourceTree = "<group>"; };
+		2ADA170A267D7E2F005C20B6 /* RegisterRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRes.swift; sourceTree = "<group>"; };
+		2AE35084268D6E88004C0147 /* AppleSignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInCoordinator.swift; sourceTree = "<group>"; };
+		2AE35086268D71CA004C0147 /* home360.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = home360.entitlements; sourceTree = "<group>"; };
+		34C81492C20FFB6BA1C69BCB /* Pods_home360Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_home360Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99CE436B792FF0ADC892B9D9 /* Pods-home360-home360UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home360-home360UITests.debug.xcconfig"; path = "Target Support Files/Pods-home360-home360UITests/Pods-home360-home360UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A88363CB6D2AE823F709A33C /* Pods-home360.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home360.debug.xcconfig"; path = "Target Support Files/Pods-home360/Pods-home360.debug.xcconfig"; sourceTree = "<group>"; };
+		C15C781D640E0CEB47F9A69A /* Pods-home360Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home360Tests.release.xcconfig"; path = "Target Support Files/Pods-home360Tests/Pods-home360Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D046651DE563F4A170E7A3F2 /* Pods-home360.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home360.release.xcconfig"; path = "Target Support Files/Pods-home360/Pods-home360.release.xcconfig"; sourceTree = "<group>"; };
+		D7A8A4CC0CBE01AA3133CE8E /* Pods_home360_home360UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_home360_home360UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7477AB9600BC260351736F /* Pods-home360-home360UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home360-home360UITests.release.xcconfig"; path = "Target Support Files/Pods-home360-home360UITests/Pods-home360-home360UITests.release.xcconfig"; sourceTree = "<group>"; };
+		FD9444CC1AB08FA9664CAC34 /* Pods_home360.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_home360.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +185,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A8DEFCC2675CC6100A0F334 /* KeychainSwift in Frameworks */,
+				2A408192267A2A870037B65F /* KeychainSwift in Frameworks */,
+				2ADA1710267D92AF005C20B6 /* IQKeyboardManagerSwift in Frameworks */,
+				2ABBB3F7268C6F200065B2C3 /* FacebookLogin in Frameworks */,
+				7788078413CBA1F8CF1BF836 /* Pods_home360.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA44F2FD647167D3D54714CF /* Pods_home360Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,15 +204,98 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35778D01903CF427BA202FA9 /* Pods_home360_home360UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A4081772679E2AA0037B65F /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				2A4081792679E2C60037B65F /* Remote */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		2A4081782679E2AF0037B65F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2A40817C2679E3420037B65F /* Credential.swift */,
+				2A40817E2679E4030037B65F /* LoginResponse.swift */,
+				2A4081802679E4680037B65F /* User.swift */,
+				2A4081822679E4870037B65F /* MediaReference.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		2A4081792679E2C60037B65F /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				2A40817A2679E2D90037B65F /* LoginRemoteDataManager.swift */,
+			);
+			name = Remote;
+			sourceTree = "<group>";
+		};
+		2A408184267A180A0037B65F /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				2A408188267A18380037B65F /* Entities */,
+				2A408187267A182A0037B65F /* DataManager */,
+				2A408186267A18190037B65F /* ViewModel */,
+				2A408185267A18130037B65F /* View */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		2A408185267A18130037B65F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A408189267A185F0037B65F /* RegisterView.swift */,
+				2A40818B267A18670037B65F /* Body */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2A408186267A18190037B65F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2A40818E267A1A010037B65F /* RegisterViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		2A408187267A182A0037B65F /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				2ADA1707267D7CA0005C20B6 /* Remote */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		2A408188267A18380037B65F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2ADA1705267D7B81005C20B6 /* Register.swift */,
+				2ADA170A267D7E2F005C20B6 /* RegisterRes.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		2A40818B267A18670037B65F /* Body */ = {
+			isa = PBXGroup;
+			children = (
+				2A40818C267A19E80037B65F /* RegisterButton.swift */,
+				2ADA1703267CA135005C20B6 /* ManualRegisterView.swift */,
+			);
+			name = Body;
+			sourceTree = "<group>";
+		};
 		2A5A219F2677377D002EF3F6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				2A408184267A180A0037B65F /* Register */,
 				2A5A21A926774D99002EF3F6 /* Login */,
 				2A5A21A126773790002EF3F6 /* Start */,
 			);
@@ -183,6 +330,9 @@
 		2A5A21A926774D99002EF3F6 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				2AE35083268D6E68004C0147 /* Delegates */,
+				2A4081782679E2AF0037B65F /* Entities */,
+				2A4081772679E2AA0037B65F /* DataManager */,
 				2A5A21AD26774F86002EF3F6 /* ViewModel */,
 				2A5A21AC26774F72002EF3F6 /* View */,
 			);
@@ -192,8 +342,8 @@
 		2A5A21AC26774F72002EF3F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2A5A21B226776A3F002EF3F6 /* Body */,
 				2A5A21AE26775380002EF3F6 /* LoginView.swift */,
+				2A5A21B226776A3F002EF3F6 /* Body */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -210,11 +360,12 @@
 			isa = PBXGroup;
 			children = (
 				2A5A21B326776A72002EF3F6 /* ManualLoginView.swift */,
-				2A5A21BB26776ADC002EF3F6 /* GoogleLoginView.swift */,
 				2A5A21B526776A85002EF3F6 /* SocialLoginView.swift */,
+				2A5A21BB26776ADC002EF3F6 /* GoogleLoginView.swift */,
 				2A5A21B726776AAA002EF3F6 /* LoginButton.swift */,
 				2A5A21B926776AD0002EF3F6 /* FacebookButton.swift */,
 				2A5A21BD26776B2A002EF3F6 /* TextFieldView.swift */,
+				2A22F07D26788E11002701ED /* SignInWithApple.swift */,
 			);
 			name = Body;
 			sourceTree = "<group>";
@@ -243,8 +394,17 @@
 			children = (
 				2A5A21D92677782C002EF3F6 /* ButtonTemplate.swift */,
 				2A5A21DD26778047002EF3F6 /* TextTemplate.swift */,
+				2A74567A2678A6400084E100 /* TextFieldCustom.swift */,
 			);
 			name = UITemplates;
+			sourceTree = "<group>";
+		};
+		2A687B4F267A4E7500B563A2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2A687B50267A4EB000B563A2 /* APIResponse.swift */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 		2A8DEF8C2675CACF00A0F334 = {
@@ -254,6 +414,8 @@
 				2A8DEFA92675CAD000A0F334 /* home360Tests */,
 				2A8DEFB42675CAD000A0F334 /* home360UITests */,
 				2A8DEF962675CACF00A0F334 /* Products */,
+				B06FAB02D4C755C4E5BD346A /* Pods */,
+				3DF4386C0F5A2042A7C9B8A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -270,6 +432,7 @@
 		2A8DEF972675CACF00A0F334 /* home360 */ = {
 			isa = PBXGroup;
 			children = (
+				2AE35086268D71CA004C0147 /* home360.entitlements */,
 				2A8DEFC52675CB0F00A0F334 /* App */,
 				2A8DEFC62675CB5700A0F334 /* Extensions */,
 				2A8DEFC72675CB7800A0F334 /* Shared */,
@@ -291,6 +454,7 @@
 		2A8DEFA92675CAD000A0F334 /* home360Tests */ = {
 			isa = PBXGroup;
 			children = (
+				2AC2E9B426A1743D003C20FF /* Login */,
 				2A8DEFAA2675CAD000A0F334 /* home360Tests.swift */,
 				2A8DEFAC2675CAD000A0F334 /* Info.plist */,
 			);
@@ -309,8 +473,9 @@
 		2A8DEFC52675CB0F00A0F334 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				2ABBB3F8268C70170065B2C3 /* GoogleService-Info.plist */,
+				2A22F07F26788E85002701ED /* home360Release.entitlements */,
 				2A8DEF982675CACF00A0F334 /* home360App.swift */,
-				2A8DEF9A2675CACF00A0F334 /* ContentView.swift */,
 				2A8DEFA12675CAD000A0F334 /* Info.plist */,
 				2A8DEF9C2675CAD000A0F334 /* Assets.xcassets */,
 				2A8DEF9E2675CAD000A0F334 /* Preview Content */,
@@ -321,7 +486,9 @@
 		2A8DEFC62675CB5700A0F334 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				2A5A21DF26778881002EF3F6 /* Color+Extensions.swift */,
+				2AAA0001269846BC0020390A /* Color+Extensions.swift */,
+				2A40816F2679C1590037B65F /* UIApplication+Extension.swift */,
+				2A4081712679C1F40037B65F /* View+Extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -329,11 +496,13 @@
 		2A8DEFC72675CB7800A0F334 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2A687B4F267A4E7500B563A2 /* Entities */,
 				2A5A21BF26776B7F002EF3F6 /* Fonts */,
 				2A8DEFC82675CB8B00A0F334 /* SF.swift */,
 				2A8DEFCD2675CC8900A0F334 /* Persistance.swift */,
 				2A8DEFCF2675CD5900A0F334 /* Constants.swift */,
 				2A8DEFD22675CDCC00A0F334 /* Cache.swift */,
+				2A058158268ED6CD00F068ED /* RootPresentationMode.swift */,
 				2A5A21AA26774DDC002EF3F6 /* Images.swift */,
 				2A5A21DB26777A81002EF3F6 /* Fonts.swift */,
 			);
@@ -369,6 +538,7 @@
 		2A8DEFDD2675DD2400A0F334 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
+				2A4081732679D20D0037B65F /* AuthEndpoint.swift */,
 			);
 			name = Endpoints;
 			sourceTree = "<group>";
@@ -378,10 +548,58 @@
 			children = (
 				2A8DEFDF2675DD5400A0F334 /* NetworkCore.swift */,
 				2A8DEFE12675DD8A00A0F334 /* RequestService.swift */,
-				2A8DEFE32675DDB500A0F334 /* ServiceError.swift */,
 				2A8DEFE52675DDE600A0F334 /* Enviroment.swift */,
+				2A4081752679D3D80037B65F /* Config.swift */,
 			);
 			name = NetworkCore;
+			sourceTree = "<group>";
+		};
+		2AC2E9B426A1743D003C20FF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2A85DC30268F145900A301E6 /* LoginTests.swift */,
+				2AC2E9B526A1A845003C20FF /* LoginMockService.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2ADA1707267D7CA0005C20B6 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				2ADA1708267D7CD9005C20B6 /* RegisterRemoteDataManager.swift */,
+			);
+			name = Remote;
+			sourceTree = "<group>";
+		};
+		2AE35083268D6E68004C0147 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				2AE35084268D6E88004C0147 /* AppleSignInCoordinator.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		3DF4386C0F5A2042A7C9B8A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD9444CC1AB08FA9664CAC34 /* Pods_home360.framework */,
+				D7A8A4CC0CBE01AA3133CE8E /* Pods_home360_home360UITests.framework */,
+				34C81492C20FFB6BA1C69BCB /* Pods_home360Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B06FAB02D4C755C4E5BD346A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A88363CB6D2AE823F709A33C /* Pods-home360.debug.xcconfig */,
+				D046651DE563F4A170E7A3F2 /* Pods-home360.release.xcconfig */,
+				99CE436B792FF0ADC892B9D9 /* Pods-home360-home360UITests.debug.xcconfig */,
+				EC7477AB9600BC260351736F /* Pods-home360-home360UITests.release.xcconfig */,
+				047E829A6E6DBA0DC7AC5814 /* Pods-home360Tests.debug.xcconfig */,
+				C15C781D640E0CEB47F9A69A /* Pods-home360Tests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,9 +609,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A8DEFBA2675CAD000A0F334 /* Build configuration list for PBXNativeTarget "home360" */;
 			buildPhases = (
+				7F2D5E7ED8B5B3A7B63BF615 /* [CP] Check Pods Manifest.lock */,
 				2A8DEF912675CACF00A0F334 /* Sources */,
 				2A8DEF922675CACF00A0F334 /* Frameworks */,
 				2A8DEF932675CACF00A0F334 /* Resources */,
+				587C1A3908FA32EA88350B93 /* [CP] Embed Pods Frameworks */,
+				E8EC99DE5E7CA108F3F98238 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -401,7 +622,9 @@
 			);
 			name = home360;
 			packageProductDependencies = (
-				2A8DEFCB2675CC6100A0F334 /* KeychainSwift */,
+				2A408191267A2A870037B65F /* KeychainSwift */,
+				2ADA170F267D92AF005C20B6 /* IQKeyboardManagerSwift */,
+				2ABBB3F6268C6F200065B2C3 /* FacebookLogin */,
 			);
 			productName = home360;
 			productReference = 2A8DEF952675CACF00A0F334 /* home360.app */;
@@ -411,6 +634,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A8DEFBD2675CAD000A0F334 /* Build configuration list for PBXNativeTarget "home360Tests" */;
 			buildPhases = (
+				0059BADB29A020A0B55D2508 /* [CP] Check Pods Manifest.lock */,
 				2A8DEFA22675CAD000A0F334 /* Sources */,
 				2A8DEFA32675CAD000A0F334 /* Frameworks */,
 				2A8DEFA42675CAD000A0F334 /* Resources */,
@@ -429,9 +653,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A8DEFC02675CAD000A0F334 /* Build configuration list for PBXNativeTarget "home360UITests" */;
 			buildPhases = (
+				D4D0B37C902AFCF1F6109C41 /* [CP] Check Pods Manifest.lock */,
 				2A8DEFAD2675CAD000A0F334 /* Sources */,
 				2A8DEFAE2675CAD000A0F334 /* Frameworks */,
 				2A8DEFAF2675CAD000A0F334 /* Resources */,
+				70E64FA7F88F71D24E967572 /* [CP] Embed Pods Frameworks */,
+				175D7766CE3712C0DFEEC5BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -475,7 +702,9 @@
 			);
 			mainGroup = 2A8DEF8C2675CACF00A0F334;
 			packageReferences = (
-				2A8DEFCA2675CC6100A0F334 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				2A408190267A2A870037B65F /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				2ADA170E267D92AE005C20B6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				2ABBB3F5268C6F200065B2C3 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 			);
 			productRefGroup = 2A8DEF962675CACF00A0F334 /* Products */;
 			projectDirPath = "";
@@ -495,6 +724,7 @@
 			files = (
 				2A5A21CF267775E1002EF3F6 /* Roboto-ThinItalic.ttf in Resources */,
 				2A5A21D4267775E1002EF3F6 /* Roboto-LightItalic.ttf in Resources */,
+				2ABBB3F9268C70170065B2C3 /* GoogleService-Info.plist in Resources */,
 				2A5A21D6267775E1002EF3F6 /* Roboto-MediumItalic.ttf in Resources */,
 				2A5A21D5267775E1002EF3F6 /* Roboto-Bold.ttf in Resources */,
 				2A5A21D0267775E1002EF3F6 /* Roboto-Regular.ttf in Resources */,
@@ -526,37 +756,193 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0059BADB29A020A0B55D2508 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-home360Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		175D7766CE3712C0DFEEC5BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-home360-home360UITests/Pods-home360-home360UITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-home360-home360UITests/Pods-home360-home360UITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-home360-home360UITests/Pods-home360-home360UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		587C1A3908FA32EA88350B93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-home360/Pods-home360-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-home360/Pods-home360-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-home360/Pods-home360-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70E64FA7F88F71D24E967572 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-home360-home360UITests/Pods-home360-home360UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-home360-home360UITests/Pods-home360-home360UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-home360-home360UITests/Pods-home360-home360UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F2D5E7ED8B5B3A7B63BF615 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-home360-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4D0B37C902AFCF1F6109C41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-home360-home360UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8EC99DE5E7CA108F3F98238 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-home360/Pods-home360-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-home360/Pods-home360-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-home360/Pods-home360-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2A8DEF912675CACF00A0F334 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A4081742679D20D0037B65F /* AuthEndpoint.swift in Sources */,
 				2A5A21B826776AAA002EF3F6 /* LoginButton.swift in Sources */,
+				2ADA1706267D7B81005C20B6 /* Register.swift in Sources */,
 				2A5A21BA26776AD0002EF3F6 /* FacebookButton.swift in Sources */,
+				2ADA1704267CA135005C20B6 /* ManualRegisterView.swift in Sources */,
+				2ADA170B267D7E2F005C20B6 /* RegisterRes.swift in Sources */,
 				2A5A21A7267738C6002EF3F6 /* StartViewModel.swift in Sources */,
-				2A5A21E026778881002EF3F6 /* Color+Extensions.swift in Sources */,
-				2A8DEFE42675DDB500A0F334 /* ServiceError.swift in Sources */,
+				2A74567B2678A6400084E100 /* TextFieldCustom.swift in Sources */,
+				2A40818D267A19E80037B65F /* RegisterButton.swift in Sources */,
 				2A8DEFD02675CD5900A0F334 /* Constants.swift in Sources */,
 				2A5A21B426776A72002EF3F6 /* ManualLoginView.swift in Sources */,
 				2A5A21AF26775380002EF3F6 /* LoginView.swift in Sources */,
+				2A40818F267A1A010037B65F /* RegisterViewModel.swift in Sources */,
 				2A5A21B12677538C002EF3F6 /* LoginViewModel.swift in Sources */,
+				2A40817B2679E2D90037B65F /* LoginRemoteDataManager.swift in Sources */,
 				2A8DEFE22675DD8A00A0F334 /* RequestService.swift in Sources */,
 				2A5A21DA2677782C002EF3F6 /* ButtonTemplate.swift in Sources */,
 				2A5A21A3267737F8002EF3F6 /* StartView.swift in Sources */,
-				2A8DEF9B2675CACF00A0F334 /* ContentView.swift in Sources */,
 				2A8DEFCE2675CC8900A0F334 /* Persistance.swift in Sources */,
+				2A687B51267A4EB000B563A2 /* APIResponse.swift in Sources */,
 				2A8DEF992675CACF00A0F334 /* home360App.swift in Sources */,
+				2A40817D2679E3420037B65F /* Credential.swift in Sources */,
+				2ADA1709267D7CD9005C20B6 /* RegisterRemoteDataManager.swift in Sources */,
 				2A8DEFDB2675DA2D00A0F334 /* ActivityIndicator.swift in Sources */,
+				2A22F07E26788E11002701ED /* SignInWithApple.swift in Sources */,
 				2A5A21BE26776B2A002EF3F6 /* TextFieldView.swift in Sources */,
+				2AAA0002269846BC0020390A /* Color+Extensions.swift in Sources */,
 				2A5A21DC26777A81002EF3F6 /* Fonts.swift in Sources */,
 				2A5A21AB26774DDC002EF3F6 /* Images.swift in Sources */,
+				2AE35085268D6E88004C0147 /* AppleSignInCoordinator.swift in Sources */,
 				2A8DEFD32675CDCC00A0F334 /* Cache.swift in Sources */,
+				2A4081722679C1F40037B65F /* View+Extension.swift in Sources */,
 				2A8DEFC92675CB8B00A0F334 /* SF.swift in Sources */,
+				2A40818A267A185F0037B65F /* RegisterView.swift in Sources */,
 				2A5A21B626776A85002EF3F6 /* SocialLoginView.swift in Sources */,
 				2A8DEFE02675DD5400A0F334 /* NetworkCore.swift in Sources */,
 				2A8DEFE62675DDE600A0F334 /* Enviroment.swift in Sources */,
 				2A5A21BC26776ADC002EF3F6 /* GoogleLoginView.swift in Sources */,
+				2A058159268ED6CD00F068ED /* RootPresentationMode.swift in Sources */,
+				2A4081762679D3D80037B65F /* Config.swift in Sources */,
+				2A4081812679E4680037B65F /* User.swift in Sources */,
+				2A4081832679E4870037B65F /* MediaReference.swift in Sources */,
+				2A4081702679C1590037B65F /* UIApplication+Extension.swift in Sources */,
 				2A5A21DE26778047002EF3F6 /* TextTemplate.swift in Sources */,
+				2A40817F2679E4030037B65F /* LoginResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,7 +950,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AC2E9B626A1A845003C20FF /* LoginMockService.swift in Sources */,
 				2A8DEFAB2675CAD000A0F334 /* home360Tests.swift in Sources */,
+				2A85DC31268F145900A301E6 /* LoginTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,9 +1098,11 @@
 		};
 		2A8DEFBB2675CAD000A0F334 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A88363CB6D2AE823F709A33C /* Pods-home360.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = home360/home360.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"home360/Preview Content\"";
 				DEVELOPMENT_TEAM = WS4BP53MAH;
@@ -723,18 +1113,20 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.w360.home360;
+				PRODUCT_BUNDLE_IDENTIFIER = asia.w360.home360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		2A8DEFBC2675CAD000A0F334 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D046651DE563F4A170E7A3F2 /* Pods-home360.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = home360/home360Release.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"home360/Preview Content\"";
 				DEVELOPMENT_TEAM = WS4BP53MAH;
@@ -745,15 +1137,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.w360.home360;
+				PRODUCT_BUNDLE_IDENTIFIER = asia.w360.home360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		2A8DEFBE2675CAD000A0F334 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 047E829A6E6DBA0DC7AC5814 /* Pods-home360Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -776,6 +1169,7 @@
 		};
 		2A8DEFBF2675CAD000A0F334 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C15C781D640E0CEB47F9A69A /* Pods-home360Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -798,6 +1192,7 @@
 		};
 		2A8DEFC12675CAD000A0F334 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99CE436B792FF0ADC892B9D9 /* Pods-home360-home360UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -818,6 +1213,7 @@
 		};
 		2A8DEFC22675CAD000A0F334 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC7477AB9600BC260351736F /* Pods-home360-home360UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -878,7 +1274,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2A8DEFCA2675CC6100A0F334 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+		2A408190267A2A870037B65F /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
 			requirement = {
@@ -886,13 +1282,39 @@
 				minimumVersion = 19.0.0;
 			};
 		};
+		2ABBB3F5268C6F200065B2C3 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.1;
+			};
+		};
+		2ADA170E267D92AE005C20B6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2A8DEFCB2675CC6100A0F334 /* KeychainSwift */ = {
+		2A408191267A2A870037B65F /* KeychainSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2A8DEFCA2675CC6100A0F334 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			package = 2A408190267A2A870037B65F /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
+		};
+		2ABBB3F6268C6F200065B2C3 /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2ABBB3F5268C6F200065B2C3 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		2ADA170F267D92AF005C20B6 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2ADA170E267D92AE005C20B6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
